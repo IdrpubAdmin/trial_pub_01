@@ -2,10 +2,12 @@
 <html lang="ko">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>작업중-세움주택</title>
 </head>
 <body>
 <div id="wrap">
+	<!-- header wrap -->
 	<div id="header_wrap" style="background: #ddd;">
 		<header id="header">
 			<h1 class="logo">
@@ -79,30 +81,27 @@
 	<!-- visual -->
 	<div id="visual">
 		<div class="img_wrap">
-			<div class="main_v v1">
-				<h2 class="tit">visual_01</h2>
-			</div>
-
-			<div class="main_v v2">
-				<h2 class="tit">visual_02</h2>
-			</div>
-
-			<div class="main_v v3">
-				<h2 class="tit">visual_03</h2>
-			</div>
+			<ul>
+				<li><img src="img/slideimg01.jpg" alt="슬라이드1"/></li>
+				<li style="display: none"><img src="img/slideimg02.jpg" alt="슬라이드2"/></li>
+				<li style="display: none"><img src="img/slideimg03.jpg" alt="슬라이드3"/></li>
+			</ul>
 		</div>
-		<button class="prev">이전 배너보기</button>
-		<button class="next">다음 배너보기</button>
+		<button class="btn_prev">이전 배너보기</button>
+		<button class="btn_next">다음 배너보기</button>
 	</div><!--// visual-->
 
+	<!-- container -->
 	<div id="container">
 		<div class="border_line">
-			<hr/>
+			<span class="round">Customer Center</span>
+			<span>1566.1269</span>
+			<span>Mon - Fri am09:00 - pm6:00(Lunch pm 12:30 - 1:30)</span>
 		</div>
-
-		<div class="gallery_wrap">
+		<!-- gallery -->
+		<section class="gallery_wrap">
 			<h2 class="title">시공갤러리</h2>
-			<span class="sub_title">CONSTRUCTION GALLERY</span>
+			<p class="sub_title">CONSTRUCTION GALLERY</p>
 			<ul>
 				<li class="gallery_card">
 					<a href="#">
@@ -112,8 +111,8 @@
 						<div class="info">
 							<div class="title">하동 남산리 주택</div>
 							<div class="date">2016.1.15 ~ 2016.8.30</div>
-							<div class=text">경사에 위치한 대지에 모던한 스타일이며,<br> 흑백의 조화를 생각한 주택입니다.</div>
-							<div class="round more">READ MORE</div>
+							<div class="text">경사에 위치한 대지에 모던한 스타일이며,<br> 흑백의 조화를 생각한 주택입니다.</div>
+							<div class="round">READ MORE</div>
 						</div>
 					</a>
 				</li>
@@ -125,7 +124,7 @@
 						<div class="info">
 							<div class="title">하동 남산리 주택2</div>
 							<div class="date">2016.1.15 ~ 2016.8.30</div>
-							<div class=text">경사에 위치한 대지에 모던한 스타일이며,<br> 흑백의 조화를 생각한 주택입니다.</div>
+							<div class="text">경사에 위치한 대지에 모던한 스타일이며,<br> 흑백의 조화를 생각한 주택입니다.</div>
 							<div class="round more">READ MORE</div>
 						</div>
 					</a>
@@ -138,7 +137,7 @@
 						<div class="info">
 							<div class="title">하동 남산리 주택3</div>
 							<div class="date">2016.1.15 ~ 2016.8.30</div>
-							<div class=text">경사에 위치한 대지에 모던한 스타일이며,<br> 흑백의 조화를 생각한 주택입니다.</div>
+							<div class="text">경사에 위치한 대지에 모던한 스타일이며,<br> 흑백의 조화를 생각한 주택입니다.</div>
 							<div class="round more">READ MORE</div>
 						</div>
 					</a>
@@ -151,27 +150,28 @@
 						<div class="info">
 							<div class="title">하동 남산리 주택4</div>
 							<div class="date">2016.1.15 ~ 2016.8.30</div>
-							<div class=text">경사에 위치한 대지에 모던한 스타일이며,<br> 흑백의 조화를 생각한 주택입니다.</div>
+							<div class="text">경사에 위치한 대지에 모던한 스타일이며,<br> 흑백의 조화를 생각한 주택입니다.</div>
 							<div class="round more">READ MORE</div>
 						</div>
 					</a>
 				</li>
 			</ul>
-			<button class="btn-gallery">
+			<button class="btn_gallery">
 				<img src="img/btn_gallery_more.png" alt="갤러리 더보기 버튼">
 			</button>
-		</div><!--// gallery_wrap-->
+		</section><!--// gallery_wrap-->
 
-		<div class="story_wrap">
+		<!-- story -->
+		<section class="story_wrap">
 			<h2 class="title">건축주 스토리</h2>
-			<span class="sub_title">CONSTRUCTION GALLERY</span>
+			<p class="sub_title">CONSTRUCTION GALLERY</p>
 			<ul>
 				<li class="story_card">
 					<a href="#">
 						<div class="info">
 							<div class="circle_item">외장공사</div>
 							<div class="title">하동 남산리 주택</div>
-							<div class=text">경사에 위치한 대지에 모던한 스타일이며,흑백의<br>조화를 생각한 주택입니다.</div>
+							<div class="text">경사에 위치한 대지에 모던한 스타일이며,흑백의<br>조화를 생각한 주택입니다.</div>
 							<div class="sub_text">
 								<span>설계</span> 1층 목골조 작업 중입니다.<br>
 								<span>시공예상일정</span> 3개월
@@ -187,7 +187,7 @@
 						<div class="info">
 							<div class="circle_item">기초공사</div>
 							<div class="title">부산 구포동 주택</div>
-							<div class=text">급경사에 세워진 스킵플로어 형식의 주택입니다.</div>
+							<div class="text">급경사에 세워진 스킵플로어 형식의 주택입니다.</div>
 							<div class="sub_text">
 								<span>설계</span> 1층 목골조 작업 중입니다.<br>
 								<span>시공예상일정</span> 3개월
@@ -205,7 +205,7 @@
 						<div class="info">
 							<div class="circle_item">골조공사</div>
 							<div class="title">고성 내산리 주택</div>
-							<div class=text">산기슭에 위치한 전원주택, 바다의 조망이 가능한<br/>발코니와 마당이 특징입니다.</div>
+							<div class="text">산기슭에 위치한 전원주택, 바다의 조망이 가능한<br/>발코니와 마당이 특징입니다.</div>
 							<div class="sub_text">
 								<span>설계</span> 1층 목골조 작업 중입니다.<br>
 								<span>시공예상일정</span> 3개월
@@ -221,7 +221,7 @@
 						<div class="info">
 							<div class="circle_item">설계진행</div>
 							<div class="title">대구 사수동 주택</div>
-							<div class=text">도심 주택단지에 위치한 블랙&화이트의 모던 스타일<br>주택입니다.</div>
+							<div class="text">도심 주택단지에 위치한 블랙&화이트의 모던 스타일<br>주택입니다.</div>
 							<div class="sub_text">
 								<span>설계</span> 1층 목골조 작업 중입니다.<br>
 								<span>시공예상일정</span> 3개월
@@ -233,19 +233,142 @@
 					</a>
 				</li>
 			</ul>
-		</div><!--// story_wrap-->
+		</section><!--// story_wrap-->
 
-		<div class="recommend">
-		</div><!--// recommend -->
+		<!-- recommend -->
+		<section class="recommend">
+			<div style="background: url(img/recommend_bg_01.jpg) no-repeat;">
+				<h2><img src="img/recommend_title.png" alt="세움 추천 스틸하우스"></h2>
+				<div class="notice">
+					<table>
+						<caption class="hidden">세움건설 공지사항</caption>
+						<thead>
+							<tr>
+								<th>공지사항</th>
+								<th><a href="#" class="more">MORE +</a></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>2015 경남 건축 인테리어 전시회가 종료되었습니다.</td>
+								<td>2016.5.15</td>
+							</tr>
+							<tr>
+								<td>다양한 지역과 여러 건축주님들을 만날 수 있었습니다.</td>
+								<td>2016.7.18</td>
+							</tr>
+							<tr>
+								<td>Still House에서는 다양한 기획예산, 설계와 스타일링...</td>
+								<td>2016.9.18</td>
+							</tr>
+							<tr>
+								<td>끝까지 함께하는 주거시설부문 국내 유일의 디자인 플랫폼입니다.</td>
+								<td>2016.4.20</td>
+							</tr>
+							<tr>
+								<td>세상에 단 하나 뿐인 프리미엄 디자인으로 고객여러분께...</td>
+								<td>2016.6.12</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="banner">
+					<ul>
+						<li><img src="img/banner01.jpg" alt="세움추천 배너1"/></li>
+						<li style="display: none"><img src="img/banner02.jpg" alt="세움추천 배너2"/></li>
+						<li style="display: none"><img src="img/banner03.jpg" alt="세움추천 배너3"/></li>
+						<li style="display: none"><img src="img/banner04.jpg" alt="세움추천 배너4"/></li>
+					</ul>
+					<div class="indicator">
+						<ul class="indi">
+							<li><img src="img/bannerOn_icon.png" alt="세움추천 배너1 아이콘"></li>
+							<li><img src="img/banner_icon.png" alt="세움추천 배너2 아이콘"></li>
+							<li><img src="img/banner_icon.png" alt="세움추천 배너3 아이콘"></li>
+							<li><img src="img/banner_icon.png" alt="세움추천 배너4 아이콘"></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div style="background: url(img/recommend_bg_02.jpg) no-repeat;">
+				<div>
+					<h3  class="title">STILL HOUSE, <b>추천설계</b></h3>
+					<p class="sub_title">당신에게 추천해드리는 맞춤형 공간, 세운에서 제안해드립니다.</p>
+					<button class="btn_consulting">
+						<img src="img/btn_consulting.png" alt="건축상담 바로가기 버튼">
+					</button>
+				</div>
+			</div>
+		</section><!--// recommend -->
 
-        <div class="why_steel">
-		</div><!--// why_steel -->
+		<!-- why_steel -->
+        <section class="why_steel">
+			<ul>
+				<li><img src="img/why_steel_h01.png" alt="why_steel_01"></li>
+				<li><img src="img/why_steel_h02.png" alt="why_steel_02"></li>
+				<li><img src="img/why_steel_h03.png" alt="why_steel_03"></li>
+				<li><img src="img/why_steel_h04.png" alt="why_steel_04"></li>
+			</ul>
+		</section><!--// why_steel -->
 	</div><!--// container -->
 
-	<div id="aside">seum Quick Menu</div>
-	<!--// aside -->
+	<!-- aside -->
+	<div id="aside" style="background-color: #545454;">
+		<h3 style="display: none">seum Quick Menu</h3>
+		<ul class="logo_call">
+			<li><a href="#" ><img src="img/aside/logo.png" alt="세움건설 홈페이지"/></a></li>
+			<li><a href="tel:1566-1269" ><img src="img/aside/call.png" alt="상담원연결"/></a></li>
+		</ul>
+		<ul class="quick_btn">
+			<li><a href="#" ><img src="img/aside/map.png" alt="오시는 길"/></a></li>
+			<li><a href="#" ><img src="img/aside/faq.png" alt="자주묻는 질문"/></a></li>
+			<li><a href="#" ><img src="img/aside/as.png" alt="as문의"/></a></li>
+			<li><a href="#" ><img src="img/aside/consult.png" alt="컨설팅"/></a></li>
+		</ul>
+		<ul class="sns">
+			<li><a href="#" ><img src="img/aside/twitter.png" alt="트위터"/></a></li>
+			<li><a href="#" ><img src="img/aside/mail.png" alt="메일"/></a></li>
+			<li><a href="#" ><img src="img/aside/cloud.png" alt="클라우드"/></a></li>
+		</ul>
+	</div><!--// aside -->
 
+
+	<!-- footer -->
 	<div id="footer">
+		<div class="footer_top">
+			<a href="#">HOME</a>
+			<a href="#">COMPANY</a>
+			<span>
+				<img src="img/footer_naver.png" alt="전원주택 내집을 부탁해">
+			</span>
+		</div>
+
+		<div class="footer_detail">
+			<div class="customer_center">
+				<h4>CUSTOMER CENTER</h4>
+				<a href="tel:1566-1269">1566.1269</a>
+				<p>MON-FRI AM9:00 - PM6:00</p>
+				<p>SAT, SUN, Holiday off (Lunch pm 12:30 - 1:30)</p>
+			</div>
+
+			<div class="company_info">
+				<h4>COMPANY INFO</h4>
+				<dl>
+					<dt>Company</dt><dd>세움주택건설</dd>
+					<dt>Owner</dt><dd>박주찬</dd>
+					<dt>Address</dt><dd>천안시 서북구 두정동 1006번지 늘사랑빌딩 201호</dd>
+					<dt>Tel</dt><dd>010-7999-3084</dd>
+					<dt>Fax</dt><dd>0303-3444-3084</dd>
+					<dt>Business Licence</dt><dd>123-45-67890</dd>
+					<dt>Mall-Order Licence</dt><dd>천안 0123호</dd>
+					<dt>E-mail</dt><dd>disposed@hanmail.net</dd>
+				</dl>
+			</div>
+
+			<div class="copyright">
+				COPYRIGHT ＠ 2016 <strong>SEUM.</strong> ALL RIGHTS RESERVED.
+				<address class="addr"><a href="#" target="_blank"><img src="img/footer_idea_pm.png" alt="idea_pm"></a></address>
+			</div>
+		</div>
 	</div><!--// footer -->
 </div>
 </body>
