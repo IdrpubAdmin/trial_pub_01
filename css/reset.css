@@ -53,7 +53,7 @@ table {
 html,body{height:100%;-webkit-text-size-adjust:none;font-size:100%}
 
 /* a 링크 초기화 */
-a {color: #222; text-decoration: none;}
+a {color: #222; text-decoration: none; cursor: pointer;}
 
 /* 폰트 초기화 */
 body, input, textarea, select, button, table {font-family: 'Nanum Square','Nanum Gothic','맑은 고딕','MalgunGothic','Dotum','돋움','AppleSDGothic',sans-serif; font-size: 12px; }
@@ -66,7 +66,7 @@ em,address {font-style: normal;}
 img,fieldset {border:0 none;}
 
 /* 버튼 초기화 */
-button {border: 0;}
+button {border: 0; cursor: pointer;}
 
 /* 반응형 */
 /*video,img {width: 100%;}*/

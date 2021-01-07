@@ -100,15 +100,15 @@
 
 	<!-- visual -->
 	<div id="visual">
+		<button type="button" class="btn_prev">이전 배너보기</button>
+		<button type="button" class="btn_next">다음 배너보기</button>
 		<div class="img_wrap">
 			<ul>
 				<li><img src="img/slideimg01.jpg" alt=""/></li>
-				<li class="none"><img src="img/slideimg02.jpg" alt=""/></li>
-				<li class="none"><img src="img/slideimg03.jpg" alt=""/></li>
+				<li class="hide"><img src="img/slideimg02.jpg" alt=""/></li>
+				<li class="hide"><img src="img/slideimg03.jpg" alt=""/></li>
 			</ul>
 		</div>
-		<button type="button" class="btn_prev">이전 배너보기</button>
-		<button type="button" class="btn_next">다음 배너보기</button>
 	</div><!--// visual-->
 
 	<!-- container -->
@@ -116,8 +116,8 @@
 		<div class="cs_center">
 			<span class="line">line</span>
 			<span class="round">Customer Center</span>
-			<span>1566.1269</span>
-			<span>Mon - Fri am09:00 - pm6:00(Lunch pm 12:30 - 1:30)</span>
+			<span class="call">1566.1269</span>
+			<span class="time">Mon - Fri am09:00 - pm6:00 (Lunch pm 12:30 - 1:30)</span>
 		</div>
 		<!-- gallery -->
 		<section class="gallery_wrap">
@@ -125,6 +125,7 @@
 			<p class="sub_title">CONSTRUCTION GALLERY</p>
 			<ul>
 				<li class="gallery_card">
+					<span>VIEW DETAIL+</span>
 					<a href="#">
 						<div class="img">
 							<img src="img/gallery_01.png" alt="하동 남산리 주택">
@@ -138,6 +139,7 @@
 					</a>
 				</li>
 				<li class="gallery_card">
+					<span>VIEW DETAIL+</span>
 					<a href="#">
 						<div class="img">
 							<img src="img/gallery_02.png" alt="하동 남산리 주택2">
@@ -151,6 +153,7 @@
 					</a>
 				</li>
 				<li class="gallery_card">
+					<span>VIEW DETAIL+</span>
 					<a href="#">
 						<div class="img">
 							<img src="img/gallery_03.png" alt="하동 남산리 주택3">
@@ -164,6 +167,7 @@
 					</a>
 				</li>
 				<li class="gallery_card">
+					<span>VIEW DETAIL+</span>
 					<a href="#">
 						<div class="img">
 							<img src="img/gallery_04.png" alt="하동 남산리 주택4">
@@ -197,6 +201,7 @@
 							</div>
 						</div>
 						<div class="img">
+							<span>2016.11.15</span>
 							<img src="img/story_01.png" alt="하동 남산리 주택">
 						</div>
 					</a>
@@ -213,6 +218,7 @@
 							</div>
 						</div>
 						<div class="img">
+							<span>2014.07.16</span>
 							<img src="img/story_02.png" alt="부산 구포동 주택">
 						</div>
 					</a>
@@ -231,6 +237,7 @@
 							</div>
 						</div>
 						<div class="img">
+							<span>2012.07.25</span>
 							<img src="img/story_03.png" alt="고성 내산리 주택">
 						</div>
 					</a>
@@ -247,6 +254,7 @@
 							</div>
 						</div>
 						<div class="img">
+							<span>2014.07.08</span>
 							<img src="img/story_04.png" alt="대구 사수동 주택">
 						</div>
 					</a>
@@ -275,18 +283,18 @@
 
 				<div class="banner">
 					<div class="group_1">
-						<span>Recommend 01. AlphaRoom House</span>
+						<span class="title">Recommend 01. AlphaRoom House</span>
 						<ul class="img_wrap">
 							<li><img src="img/commend/img_01.png" alt=""/></li>
 							<li>
 								<img src="img/commend/img_02.png" alt=""/>
-								<ul>
-									<li>AlphaRoom House</li>
+								<ul class="info">
+									<li>ALPHAROOM HOUSE</li>
 									<li>- 생활 공간과 휴식 공간을 분리</li>
 									<li>- 한국식 기후에 적합하도록 현관부와 후면에 다용도 포치 계획</li>
 									<li>- 포치 상부 2층 조망 테라스</li>
 									<li>- 오픈형 천장 거실</li>
-									<li>- 농산물 가공, 작업공간으로서 누구나 활용할 수 있는 유니버설한 공간</li>
+									<li>- 농산물 가공, 작업공간으로서 누구나 활용할 수 있는<br> 유니버설한 공간</li>
 								</ul>
 							</li>
 							<li><img src="img/commend/img_03.png" alt=""/></li>
@@ -294,13 +302,13 @@
 						</ul>
 					</div>
 
-					<div class="group_2 none">
+					<div class="group_2 hide">
 						<span>Recommend 03. AlphaRoom House</span>
 						<ul class="img_wrap">
 							<li><img src="img/commend/img_01.png" alt=""/></li>
 							<li>
 								<img src="img/commend/img_02.png" alt=""/>
-								<ul>
+								<ul class="info">
 									<li>AlphaRoom House</li>
 									<li>- 생활 공간과 휴식 공간을 분리</li>
 									<li>- 한국식 기후에 적합하도록 현관부와 후면에 다용도 포치 계획</li>
@@ -314,13 +322,13 @@
 						</ul>
 					</div>
 
-					<div class="group_3 none">
+					<div class="group_3 hide">
 						<span>Recommend 03. AlphaRoom House</span>
 						<ul class="img_wrap">
 							<li><img src="img/commend/img_01.png" alt=""/></li>
 							<li>
 								<img src="img/commend/img_02.png" alt=""/>
-								<ul>
+								<ul class="info">
 									<li>AlphaRoom House</li>
 									<li>- 생활 공간과 휴식 공간을 분리</li>
 									<li>- 한국식 기후에 적합하도록 현관부와 후면에 다용도 포치 계획</li>
@@ -334,13 +342,13 @@
 						</ul>
 					</div>
 
-					<div class="group_4 none">
+					<div class="group_4 hide">
 						<span>Recommend 04. AlphaRoom House</span>
 						<ul class="img_wrap">
 							<li><img src="img/commend/img_01.png" alt=""/></li>
 							<li>
 								<img src="img/commend/img_02.png" alt=""/>
-								<ul>
+								<ul class="info">
 									<li>AlphaRoom House</li>
 									<li>- 생활 공간과 휴식 공간을 분리</li>
 									<li>- 한국식 기후에 적합하도록 현관부와 후면에 다용도 포치 계획</li>
@@ -383,7 +391,7 @@
 					<div>
 						<h5 class="title">지진에 안전한 구조</h5>
 						<p class="sub_title">이제 한반도도 더 이상 지진의 안전지대가 아닙니다.</p>
-						<p class="txt">이제 주택도 급변하는 지구환경에 대해 대비해야 할 때가 왔습니다. 유연함과 강성을 함께 가지고 있는 스틸하우스는 어떤 구조보다 지진에 강합니다.</p>
+						<p class="txt">이제 주택도 급변하는 지구환경에 대해 대비해야 할 때가 왔습니다.<br> 유연함과 강성을 함께 가지고 있는 스틸하우스는 어떤 구조보다 지진에 강합니다.</p>
 					</div>
 				</div>
 			</div>
@@ -397,7 +405,7 @@
 					<div>
 						<h5 class="title">지진에 안전한 구조</h5>
 						<p class="sub_title">이제 한반도도 더 이상 지진의 안전지대가 아닙니다.</p>
-						<p class="txt">이제 주택도 급변하는 지구환경에 대해 대비해야 할 때가 왔습니다. 유연함과 강성을 함께 가지고 있는 스틸하우스는 어떤 구조보다 지진에 강합니다.</p>
+						<p class="txt">이제 주택도 급변하는 지구환경에 대해 대비해야 할 때가 왔습니다.<br> 유연함과 강성을 함께 가지고 있는 스틸하우스는 어떤 구조보다 지진에 강합니다.</p>
 					</div>
 				</div>
 			</div>
@@ -411,7 +419,7 @@
 					<div>
 						<h5 class="title">지진에 안전한 구조</h5>
 						<p class="sub_title">이제 한반도도 더 이상 지진의 안전지대가 아닙니다.</p>
-						<p class="txt">이제 주택도 급변하는 지구환경에 대해 대비해야 할 때가 왔습니다. 유연함과 강성을 함께 가지고 있는 스틸하우스는 어떤 구조보다 지진에 강합니다.</p>
+						<p class="txt">이제 주택도 급변하는 지구환경에 대해 대비해야 할 때가 왔습니다.<br> 유연함과 강성을 함께 가지고 있는 스틸하우스는 어떤 구조보다 지진에 강합니다.</p>
 					</div>
 				</div>
 			</div>
@@ -425,33 +433,12 @@
 					<div>
 						<h5 class="title">지진에 안전한 구조</h5>
 						<p class="sub_title">이제 한반도도 더 이상 지진의 안전지대가 아닙니다.</p>
-						<p class="txt">이제 주택도 급변하는 지구환경에 대해 대비해야 할 때가 왔습니다. 유연함과 강성을 함께 가지고 있는 스틸하우스는 어떤 구조보다 지진에 강합니다.</p>
+						<p class="txt">이제 주택도 급변하는 지구환경에 대해 대비해야 할 때가 왔습니다.<br> 유연함과 강성을 함께 가지고 있는 스틸하우스는 어떤 구조보다 지진에 강합니다.</p>
 					</div>
 				</div>
 			</div>
 		</section><!--// why_steel -->
 	</div><!--// container -->
-
-	<!-- aside -->
-	<div id="aside">
-		<h3 class="none">seum Quick Menu</h3>
-		<ul class="logo_call">
-			<li><a href="#" ><img src="img/aside/logo.png" alt="세움건설 홈페이지"/></a></li>
-			<li><a href="tel:1566-1269" ><img src="img/aside/call.png" alt="상담원연결"/></a></li>
-		</ul>
-		<ul class="quick_btn">
-			<li><a href="#" ><img src="img/aside/map.png" alt="오시는 길"/></a></li>
-			<li><a href="#" ><img src="img/aside/faq.png" alt="자주묻는 질문"/></a></li>
-			<li><a href="#" ><img src="img/aside/as.png" alt="as문의"/></a></li>
-			<li><a href="#" ><img src="img/aside/consult.png" alt="컨설팅"/></a></li>
-		</ul>
-		<ul class="sns">
-			<li><a href="#" ><img src="img/aside/twitter.png" alt="트위터"/></a></li>
-			<li><a href="#" ><img src="img/aside/mail.png" alt="메일"/></a></li>
-			<li><a href="#" ><img src="img/aside/cloud.png" alt="클라우드"/></a></li>
-		</ul>
-	</div><!--// aside -->
-
 
 	<!-- footer -->
 	<footer id="footer">
@@ -471,7 +458,7 @@
 			<div class="footer_detail">
 			<div class="customer_center">
 				<div class="title">CUSTOMER CENTER</div>
-				<a href="tel:1566-1269"><img src="img/call_icon.png" alt="" width="27px" height="27px"/>1566.1269</a>
+				<a href="tel:1566-1269"><img src="img/call_icon.png" alt=""/>1566.1269</a>
 				<p>MON-FRI AM9:00 - PM6:00</p>
 				<p>SAT, SUN, Holiday off (Lunch pm 12:30 - 1:30)</p>
 			</div>
@@ -496,6 +483,27 @@
 		</div>
 		</div>
 	</footer><!--// footer -->
+
+	<!-- aside -->
+	<div id="aside">
+		<h3 class="hide">seum Quick Menu</h3>
+		<ul class="logo_call">
+			<li><a href="#" ><img src="img/aside/logo.png" alt="세움건설 홈페이지"/></a></li>
+			<li><a href="tel:1566-1269" ><img src="img/aside/call.png" alt="상담원연결"/></a></li>
+		</ul>
+		<ul class="quick_btn">
+			<li><a href="#" ><img src="img/aside/map.png" alt="오시는 길"/></a></li>
+			<li><a href="#" ><img src="img/aside/faq.png" alt="자주묻는 질문"/></a></li>
+			<li><a href="#" ><img src="img/aside/as.png" alt="as문의"/></a></li>
+			<li><a href="#" ><img src="img/aside/consult.png" alt="컨설팅"/></a></li>
+		</ul>
+		<ul class="sns">
+			<li><a href="#" ><img src="img/aside/twitter.png" alt="트위터"/></a></li>
+			<li><a href="#" ><img src="img/aside/mail.png" alt="메일"/></a></li>
+			<li><a href="#" ><img src="img/aside/cloud.png" alt="클라우드"/></a></li>
+		</ul>
+	</div><!--// aside -->
+
 </div>
 </body>
 </html>
