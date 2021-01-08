@@ -1,9 +1,8 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 /* 공통 */
-.hide {
-    display: none;
+#wrap .container_box  {
+    max-width: 1170px;
+   margin: 0 auto;
 }
 
 #container .round {
@@ -13,6 +12,10 @@
     background-color: #FDBA68;
     text-align: center;
     color: #ffffff;
+}
+
+.hide {
+    display: none;
 }
 
 /* 전체 레이아웃 */
@@ -33,9 +36,7 @@
 
 #header {
     display: flex;
-    max-width: 1170px;
     height: 90px;
-    margin: 0 auto;
 }
 
 #header .logo a {
@@ -137,11 +138,6 @@
     text-align: center;
 }
 
-#container .cs_center, .gallery_wrap, .story_wrap {
-    margin: 0 auto;
-    max-width: 1170px;
-}
-
 #container .gallery_wrap > .title,
 .story_wrap > .title {
     margin: 65px 0 10px;
@@ -186,10 +182,10 @@
 
 #container .cs_center .time {
     padding-left: 5px;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 300;
     font-family: 'Noto Sans KR', sans-serif;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.3px;
     color: #999999;
 }
 
@@ -217,7 +213,9 @@
     letter-spacing: -0.5px;
     color: #fdb968;
 }
-
+.gallery_wrap .gallery_card .img {
+    transition: 1s;
+}
 .gallery_wrap .gallery_card:hover .img {
     filter: brightness(0.6);
 }
@@ -232,7 +230,7 @@
 
 .gallery_wrap .info .title {
     padding: 30px 0 47px;
-    font-size: 16px;
+    font-size: 17px;
 }
 
 .gallery_wrap .info .title:before {
@@ -250,7 +248,9 @@
 }
 
 .gallery_wrap .info .text {
-    padding: 13px 0 11px;
+    padding: 13px 0;
+    font-size: 13px;
+    letter-spacing: 1px;
     line-height: 14px;
     color: #999999;
 }
@@ -326,7 +326,6 @@
 .story_wrap .story_card .info .text {
     margin-bottom: 54px;
     line-height: 17px;
-    letter-spacing: -1px;
     color: #999999;
 }
 
@@ -376,18 +375,24 @@
     position: relative;
     justify-content: space-around;
     flex-wrap: wrap;
-    max-width: 1170px;
     min-height: 740px;
-    margin: 0 auto;
 }
 
 .recommend .top h2 {
+    position: absolute;
+    top: 0;
+    left: -10px;
     padding-top: 37px;
 }
 
+/* recommend-공지사항 */
 .recommend .top .notice {
+    position: absolute;
+    top: 0;
+    right: 130px;
     padding-top: 76px;
-    min-width: 409px;
+    max-width: 409px;
+    overflow: hidden;
 }
 
 .recommend .top .notice dl dt {
@@ -416,7 +421,6 @@
     font-size: 11px;
 }
 
-/* recommend-공지사항 */
 .recommend .top .notice ul li {
     border-top: 1px solid #dcdcdc;
 }
@@ -428,9 +432,20 @@
     height: 28px;
     color: #999999;
 }
+.recommend .top .notice ul li a:hover{
+    color: #3e3a38;
+}
 
 .recommend .top .notice ul li span {
-    padding-left: 10px;
+    width: 313px;
+    overflow: hidden;
+    text-align: left;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.recommend .top .notice ul li span:last-child {
+    padding-left: 41px;
 }
 
 /* recommend-이미지 배너 */
@@ -465,23 +480,27 @@
 }
 
 /* recommend-배너 info */
-.recommend .banner .img_wrap li .info {
+.recommend .banner .img_wrap .info {
     position: absolute;
     top: 41px;
     left: 30px;
     color: #ffffff;
 }
 
-.recommend .banner .img_wrap li .info li {
-    line-height: 15px;
+.recommend .banner .img_wrap .info li {
+    padding-left: 10px;
+    line-height: 17px;
     color: #dad8d2;
     letter-spacing: -0.5px;
+    list-style-position: outside;
+    list-style-type: "-";
 }
 
-.recommend .banner .img_wrap li .info li:first-child {
-    padding-bottom: 26px;
+.recommend .banner .img_wrap .info li:first-child {
+    padding-bottom: 19px;
     font-size: 24px;
     font-weight: 600;
+    list-style: none;
 }
 
 /* recommend- 배너 로테이팅 아이콘 */
@@ -567,17 +586,11 @@
     bottom: 0px;
     opacity: 0.4;
     background-color: #ffffff;
+    transition: 1s;
 }
 
 .values .card:hover:before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
     opacity: 0;
-    background-color: #ffffff;
 }
 
 .values .card_01 {
@@ -615,6 +628,7 @@
 
 .values .hover_wrap {
     display: none;
+    transition: 1s;
 }
 
 .values .card:hover .hover_wrap {
@@ -625,6 +639,7 @@
 }
 
 .values .hover_wrap .number {
+    margin-bottom: 140px;
     font-size: 60px;
     color: #ffffff;
     font-family: 'Lato', sans-serif;
@@ -663,9 +678,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1170px;
     min-height: 54px;
-    margin: 0 auto;
     padding-top: 5px;
 }
 
@@ -710,9 +723,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    max-width: 1170px;
     min-height: 162px;
-    margin: 0 auto;
     font-family: 'Lato', sans-serif;
     color: #3e3a38;
 }
@@ -825,6 +836,6 @@
 @media screen and (min-width: 1920px) {
     #aside {
         left: 50%;
-        margin-left: 891px;
+        margin-left: 960px;
     }
 }
