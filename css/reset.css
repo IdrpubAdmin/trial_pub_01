@@ -1,42 +1,46 @@
 @charset "UTF-8";
-
+/* woff 2.0 > woff > ttf/otf */
 /* font :: Nanum Square */
 @font-face {
     font-family: 'Nanum Square';
+    font-weight: normal;
     font-style: normal;
-    font-weight: 400;
-    src: url("../fonts/NanumSquare/NanumSquareR.eot");
-    src: local("Nanum Square Regular"),
-    local("NanumSquareR"),
-    url("../fonts/NanumSquare/NanumSquareR.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/NanumSquare/NanumSquareR.woff") format("woff"),
-    url("../fonts/NanumSquare/NanumSquareR.ttf") format("truetype");
+    src: local('NanumSquarR'); /* 폰트식별 이름 */
+    src: url('../fonts/NanumSquare/NanumSquareR.eot') format('embedded-opentype'), /* IE9 Compat Modes */
+         url('../fonts/NanumSquare/NanumSquareR.eot?#iefix') format('embedded-opentype'),/* IE6-IE8 */
+         url('../fonts/NanumSquare/NanumSquareR.woff2') format('woff2'), /* super Modern Browsers, IE 지원X */
+         url('../fonts/NanumSquare/NanumSquareR.woff') format('woff'), /* Modern Browsers, W3C사용 권장 */
+         url('../fonts/NanumSquare/NanumSquareR.ttf') format('truetype'), /* Safari, Android, iOS - 일반적 글꼴 형식 */
+         url('../fonts/NanumSquare/NanumSquareR.svg#NanumSquareR') format('svg'),/* Legacy iOS, 파일경량화, 모바일 지원 */
+         url('../fonts/NanumSquare/NanumSquareR.otf') format('opentype'); /* 주요 플랫폼에서 일반적 사용 */
 }
-/* font :: noto-sans-kr-regular - korean */
+/* font :: Noto-Sans-kr-regular */
 @font-face {
     font-family: 'Noto Sans KR';
+    font-weight: normal;
     font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/noto-sans-kr-v13-korean-regular.eot'); /* IE9 Compat Modes */
-    src: local('noto-sans-kr-v13-korean-regular'),
-    url('../fonts/noto-sans-kr-v13-korean-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../fonts/noto-sans-kr-v13-korean-regular.woff2') format('woff2'), /* Super Modern Browsers */
-    url('../fonts/noto-sans-kr-v13-korean-regular.woff') format('woff'), /* Modern Browsers */
-    url('../fonts/noto-sans-kr-v13-korean-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('../fonts/noto-sans-kr-v13-korean-regular.svg#NotoSansKR') format('svg'); /* Legacy iOS */
+    src: local('NotoSansKR-Regular');
+    src:  url('../fonts/NotoSansKr/NotoSansKR-Regular.eot') format('embedded-opentype'),
+          url('../fonts/NotoSansKr/NotoSansKR-Regular.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/NotoSansKr/NotoSansKR-Regular.woff2') format('woff2'),
+          url('../fonts/NotoSansKr/NotoSansKR-Regular.woff') format('woff'),
+          url('../fonts/NotoSansKr/NotoSansKR-Regular.ttf') format('truetype'),
+          url('../fonts/NotoSansKr/NotoSansKR-Regular.svg#NotoSansKR') format('svg'),
+          url('../fonts/NotoSansKr/NotoSansKR-Regular.otf') format('opentype');
 }
-/* font :: lato-regular - latin */
+/* font :: Lato-regular */
 @font-face {
     font-family: 'Lato';
+    font-weight: normal;
     font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/lato-v17-latin-regular.eot'); /* IE9 Compat Modes */
-    src: local('lato-v17-latin-regula'),
-    url('../fonts/lato-v17-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../fonts/lato-v17-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-    url('../fonts/lato-v17-latin-regular.woff') format('woff'), /* Modern Browsers */
-    url('../fonts/lato-v17-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('../fonts/lato-v17-latin-regular.svg#Lato') format('svg'); /* Legacy iOS */
+    src: local('Lato-Reqular');
+    src: url('../fonts/Lato/Lato-Regular.eot') format('embedded-opentype'),
+         url('../fonts/Lato/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Lato/Lato-Regular.woff2') format('woff2'),
+         url('../fonts/Lato/Lato-Regular.woff') format('woff'),
+         url('../fonts/Lato/Lato-Regular.ttf') format('truetype'),
+         url('../fonts/Lato/Lato-Regular.svg#Lato-Regular') format('svg'),
+         url('../fonts/Lato/Lato-Regular.otf') format('opentype');
 }
 
 html, body, div, span, applet, object, iframe,
@@ -132,7 +136,7 @@ img, fieldset {
 
 /* 버튼 초기화 */
 button {
-    border: 0;
+    border: none;
     cursor: pointer;
 }
 
