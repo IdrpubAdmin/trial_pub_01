@@ -7,18 +7,16 @@
 	<title>세움주택</title>
 
 	<!-- css -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" type="text/css" href="css/seum_ui.css">
 
 	<!-- 아이콘 -->
 	<script src="https://kit.fontawesome.com/91cd26fdec.js" crossorigin="anonymous"></script>
 
-	<!-- HTLM5shiv ie6~8 -->
-	<!--[if lt IE 9]>
-	<script src="assets/js/html5shiv.min.js"></script>
-	<script type="text/javascript">
-		alert("현재 브라우저는 지원하지 않습니다. 크롬 브라우저를 추천합니다.!");
-	</script>
-	<![endif]-->
+	<!-- js -->
+	<script src="js/swiper.js"></script>
+	<script src="js/common.js"></script>
 </head>
 <body>
 <div id="wrap">
@@ -30,6 +28,7 @@
 					<img src="img/logo.png" alt="세움주택">
 				</a>
 			</h1>
+
 			<nav id="gnb">
 				<ul class="gnb_1depth">
 					<li>
@@ -95,16 +94,33 @@
 
 	<!-- visual -->
 	<div id="visual">
-		<button type="button" class="btn_prev">이전 배너보기</button>
-		<button type="button" class="btn_next">다음 배너보기</button>
-		<div class="img_wrap">
-			<ul>
-				<li><img src="img/slideimg01.jpg" alt=""/></li>
-				<li class="hide"><img src="img/slideimg02.jpg" alt=""/></li>
-				<li class="hide"><img src="img/slideimg03.jpg" alt=""/></li>
+		<div class="img_wrap swiper-container">
+			<ul class="swiper-wrapper">
+				<li class="swiper-slide"><img src="img/slideimg01.jpg" alt=""/></li>
+				<li class="swiper-slide"><img src="img/slideimg02.jpg" alt=""/></li>
+				<li class="swiper-slide"><img src="img/slideimg03.jpg" alt=""/></li>
 			</ul>
+			<button type="button" class="btn_prev swiper-button-prev">이전 배너보기</button>
+			<button type="button" class="btn_next swiper-button-next">다음 배너보기</button>
 		</div>
 	</div><!--// visual-->
+
+	<script>
+		<!-- Swiper JS -->
+		var swiper = new Swiper('.swiper-container', {
+			slidesPerView: 1,
+			spaceBetween: 30,
+			loop: true,
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+	</script>
 
 	<!-- container -->
 	<div id="container">
@@ -451,31 +467,31 @@
 		</div>
 		<div class="footer_bottom">
 			<div class="footer_detail container_box">
-			<div class="customer_center">
-				<div class="title">CUSTOMER CENTER</div>
-				<a href="tel:1566-1269"><img src="img/call_icon.png" alt=""/>1566.1269</a>
-				<p>MON-FRI AM9:00 - PM6:00</p>
-				<p>SAT, SUN, Holiday off (Lunch pm 12:30 - 1:30)</p>
-			</div>
+				<div class="customer_center">
+					<div class="title">CUSTOMER CENTER</div>
+					<a href="tel:1566-1269"><img src="img/call_icon.png" alt=""/>1566.1269</a>
+					<p>MON-FRI AM9:00 - PM6:00</p>
+					<p>SAT, SUN, Holiday off (Lunch pm 12:30 - 1:30)</p>
+				</div>
 
-			<address class="company_info">
-				<div class="title">COMPANY INFO</div>
-				<dl>
-					<dt>Company</dt><dd>세움주택건설</dd>
-					<dt>Owner</dt><dd>박주찬</dd>
-					<dt>Address</dt><dd>천안시 서북구 두정동 1006번지 늘사랑빌딩 201호</dd><br>
-					<dt>Tel</dt><dd>010-7999-3084</dd>
-					<dt>Fax</dt><dd>0303-3444-3084</dd><br>
-					<dt>Business Licence</dt><dd>123-45-67890</dd><br>
-					<dt>Mall-Order Licence</dt><dd>천안 0123호</dd><br>
-					<dt>E-mail</dt><dd>disposed@hanmail.net</dd>
-				</dl>
-			</address>
-			<div class="copyright">
-				COPYRIGHT ＠ 2016 <strong>SEUM.</strong> ALL RIGHTS RESERVED.<br>
-				<a href="#"><img src="img/footer_idea_pm.png" alt=""></a>
+				<address class="company_info">
+					<div class="title">COMPANY INFO</div>
+					<dl>
+						<dt>Company</dt><dd>세움주택건설</dd>
+						<dt>Owner</dt><dd>박주찬</dd>
+						<dt>Address</dt><dd>천안시 서북구 두정동 1006번지 늘사랑빌딩 201호</dd><br>
+						<dt>Tel</dt><dd>010-7999-3084</dd>
+						<dt>Fax</dt><dd>0303-3444-3084</dd><br>
+						<dt>Business Licence</dt><dd>123-45-67890</dd><br>
+						<dt>Mall-Order Licence</dt><dd>천안 0123호</dd><br>
+						<dt>E-mail</dt><dd>disposed@hanmail.net</dd>
+					</dl>
+				</address>
+				<div class="copyright">
+					COPYRIGHT ＠ 2016 <strong>SEUM.</strong> ALL RIGHTS RESERVED.<br>
+					<a href="#"><img src="img/footer_idea_pm.png" alt=""></a>
+				</div>
 			</div>
-		</div>
 		</div>
 	</footer><!--// footer -->
 
@@ -500,5 +516,6 @@
 	</div><!--// aside -->
 
 </div>
+
 </body>
 </html>

@@ -82,12 +82,16 @@
 
 #gnb .gnb_1depth > li > a:hover {
     background-color: #87949D;
-    font-weight: 600;
+}
+
+#gnb .gnb_1depth>li:hover .gnb_2depth {
+    opacity: 1;
 }
 
 #gnb .gnb_2depth {
     padding: 10px 5px 10px 0px;
     background-color: rgba(103, 115, 124, 0.5);
+    opacity: 0;
 }
 
 #gnb .gnb_2depth li {
