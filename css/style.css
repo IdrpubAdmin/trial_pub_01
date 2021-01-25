@@ -84,14 +84,18 @@
     background-color: #87949D;
 }
 
-#gnb .gnb_1depth>li:hover .gnb_2depth {
-    opacity: 1;
-}
+/*#gnb .gnb_1depth>li:hover .gnb_2depth {*/
+/*    display: block;*/
+/*}*/
 
 #gnb .gnb_2depth {
     padding: 10px 5px 10px 0px;
     background-color: rgba(103, 115, 124, 0.5);
-    opacity: 0;
+    display: none;
+}
+
+.active {
+    display: block!important;
 }
 
 #gnb .gnb_2depth li {
