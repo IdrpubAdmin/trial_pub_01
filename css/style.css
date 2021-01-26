@@ -91,11 +91,11 @@
 #gnb .gnb_2depth {
     padding: 10px 5px 10px 0px;
     background-color: rgba(103, 115, 124, 0.5);
-    display: none;
+    opacity: 0;
 }
 
 .active {
-    display: block!important;
+    opacity: 1!important;
 }
 
 #gnb .gnb_2depth li {
@@ -524,19 +524,24 @@
 }
 
 .recommend .banner .img_wrap .info li {
-    padding-left: 10px;
+    padding-left: 23px;
     line-height: 17px;
     color: #dad8d2;
     letter-spacing: -0.5px;
-    list-style-position: outside;
-    list-style-type: "-";
+    text-indent: -10px;
+}
+.recommend .banner .img_wrap .info li:before {
+    content: "-";
+    padding-right: 5px;
 }
 
 .recommend .banner .img_wrap .info li:first-child {
     padding-bottom: 19px;
     font-size: 24px;
     font-weight: 600;
-    list-style: none;
+}
+.recommend .banner .img_wrap .info li:first-child:before{
+    content: none;
 }
 
 /* recommend- 배너 로테이팅 아이콘 */

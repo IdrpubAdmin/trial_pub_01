@@ -1,5 +1,7 @@
-
-
+// js event
+// onmouseover 마우스 포인터가 HTML 요소 위에 놓여있을 때
+// onmouseout 마우스 포인터가 HTML 요소를 벗어났을 때
+// gnb mouse over event
 document.addEventListener('DOMContentLoaded',  () => {
     const toggleBtns = document.querySelectorAll('.gnb_1depth>li');
     console.log(toggleBtns)
@@ -19,5 +21,5 @@ document.addEventListener('DOMContentLoaded',  () => {
             navItem2d.classList.remove('active');
         })
 
-        });
+    });
 })
