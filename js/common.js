@@ -1,19 +1,17 @@
-// js event
-// onmouseover 마우스 포인터가 HTML 요소 위에 놓여있을 때
-// onmouseout 마우스 포인터가 HTML 요소를 벗어났을 때
-// gnb mouse over event
+// gnb mouse over N out event
 document.addEventListener('DOMContentLoaded',  () => {
     const toggleBtns = document.querySelectorAll('.gnb_1depth>li');
     console.log(toggleBtns)
 
     toggleBtns.forEach(function(navItem,idx,list){
-
         console.log(navItem)
 
+        let navItem1d = navItem.querySelector('.gnb_1depth>li>a');
         let navItem2d = navItem.querySelector('.gnb_2depth');
 
         console.log(navItem2d)
 
+        // 1depth에 마우스 오버시 2depth 노출
         navItem.addEventListener('mouseover', function () {
             navItem2d.classList.add('active');
         })
@@ -21,5 +19,13 @@ document.addEventListener('DOMContentLoaded',  () => {
             navItem2d.classList.remove('active');
         })
 
+        // 2depth에 마우스 오버시 1depth 배경색 변경
+        navItem2d.addEventListener('mouseover', function () {
+            navItem1d.classList.add('active_02');
+        })
+        navItem2d.addEventListener('mouseout', function () {
+            navItem1d.classList.remove('active_02');
+        })
     });
+
 })

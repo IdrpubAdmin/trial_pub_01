@@ -80,22 +80,27 @@
     text-align: center;
 }
 
+#gnb .gnb_1depth > li:last-child > a {
+     padding: 53px 19px 0px;
+}
+
 #gnb .gnb_1depth > li > a:hover {
     background-color: #87949D;
 }
 
-/*#gnb .gnb_1depth>li:hover .gnb_2depth {*/
-/*    display: block;*/
-/*}*/
-
 #gnb .gnb_2depth {
+    display: none;
     padding: 10px 5px 10px 0px;
     background-color: rgba(103, 115, 124, 0.5);
-    opacity: 0;
+    border-top : 1px solid #E9D371;
 }
 
 .active {
-    opacity: 1!important;
+    display: block!important;
+}
+
+.active_02 {
+    background-color: #87949D;
 }
 
 #gnb .gnb_2depth li {
