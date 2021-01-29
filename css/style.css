@@ -1,8 +1,9 @@
 @charset "UTF-8";
 /* 공통 */
 #wrap .container_box  {
-    max-width: 1170px;
+   max-width: 1000px;
    margin: 0 auto;
+   /*background-color: #EA5021;*/
 }
 
 #container .round {
@@ -41,12 +42,12 @@
 
 #header .logo a {
     display: block;
-    padding-top: 12px;
+    width: 160px;
+    padding-top: 14px;
 }
 
 #header .logo img {
-    width: 185px;
-    height: 49px;
+    width: 100%;
 }
 
 #gnb {
@@ -72,7 +73,7 @@
 }
 
 #gnb .gnb_1depth li {
-    font-size: 17px;
+    font-size: 1rem;
 }
 
 #gnb .gnb_1depth > li > a {
@@ -81,7 +82,7 @@
 }
 
 #gnb .gnb_1depth > li:last-child > a {
-     padding: 53px 19px 0px;
+     padding: 53px 20px 0px;
 }
 
 #gnb .gnb_1depth > li > a:hover {
@@ -104,7 +105,7 @@
 }
 
 #gnb .gnb_2depth li {
-    font-size: 15px;
+    font-size: 0.9rem;
 }
 
 #gnb .gnb_2depth > li > a {
@@ -176,7 +177,7 @@
 
 #container .cs_center .line {
     position: absolute;
-    width: 648px;
+    width: 470px;
     top: 7px;
     left: 0;
     border-top: 1px solid #E1E1E1;
@@ -217,10 +218,12 @@
 .gallery_wrap ul {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 30px!important;
 }
 
 .gallery_wrap ul .gallery_card {
     position: relative;
+    width: 23%;
 }
 
 .gallery_wrap ul .gallery_card span {
@@ -230,15 +233,20 @@
 .gallery_wrap ul .gallery_card:hover span {
     display: block;
     position: absolute;
-    top: 138px;
-    left: 83px;
+    top: 28%;
+    left: 27%;
     z-index: 20;
     font-size: 16px;
     letter-spacing: -0.5px;
     color: #fdb968;
 }
+
+
 .gallery_wrap .gallery_card .img {
     transition: 1s;
+}
+.gallery_wrap .gallery_card .img img {
+    width: 100%;
 }
 .gallery_wrap .gallery_card:hover .img {
     filter: brightness(0.6);
@@ -254,7 +262,7 @@
 
 .gallery_wrap .info .title {
     padding: 30px 0 47px;
-    font-size: 17px;
+    font-size: 1.1rem;
 }
 
 .gallery_wrap .info .title:before {
@@ -266,14 +274,14 @@
 }
 
 .gallery_wrap .info .date {
-    font-size: 18px;
+    font-size: 1.12rem;
     font-weight: 600;
     color: #3d3d3d;
 }
 
 .gallery_wrap .info .text {
     padding: 13px 0;
-    font-size: 13px;
+    font-size: 0.75rem;
     letter-spacing: 1px;
     line-height: 14px;
     color: #999999;
@@ -319,8 +327,8 @@
 }
 
 .story_wrap ul li {
-    width: 576px;
-    height: 250px;
+    width: 49%;
+    max-height: 218px;
     border: 1px solid #dddddd;
 }
 
@@ -331,7 +339,8 @@
 
 .story_wrap .story_card .info {
     position: relative;
-    padding: 17px 0 0 10px;
+    max-width: 216px;
+    padding: 10px 0 0 10px;
     text-align: left;
 }
 
@@ -355,7 +364,7 @@
 .story_wrap .story_card .info .title {
     margin: 19px 0 14px;
     letter-spacing: -1px;
-    font-size: 16px;
+    font-size: 0.9rem;
     font-weight: 600;
     color: #333333;
 }
@@ -364,6 +373,7 @@
     margin-bottom: 54px;
     line-height: 17px;
     color: #999999;
+    font-size: 0.65rem;
 }
 
 .story_wrap .story_card .info .sub_text {
@@ -373,6 +383,7 @@
     letter-spacing: -0.5px;
     line-height: 17px;
     color: #aaaaaa;
+    font-size: 0.65rem;
 }
 
 .story_wrap .story_card .info .sub_text span {
@@ -382,6 +393,11 @@
 
 .story_wrap .story_card .img {
     position: relative;
+    max-width: 255px;
+}
+
+.story_wrap .story_card .img img {
+    width: 100%;
 }
 
 .story_wrap .story_card .img:before {
@@ -418,16 +434,21 @@
 
 .recommend .top h2 {
     position: absolute;
+    width: 460px;
     top: 0;
-    left: -10px;
+    left: 0;
     padding-top: 37px;
+}
+
+.recommend .top h2 img {
+    width: 100%;
 }
 
 /* recommend-공지사항 */
 .recommend .top .notice {
     position: absolute;
     top: 0;
-    right: 130px;
+    right: 15px;
     padding-top: 76px;
     max-width: 409px;
     overflow: hidden;
@@ -490,7 +511,7 @@
 /* recommend-이미지 배너 */
 .recommend .banner {
     position: absolute;
-    bottom: -51px;
+    bottom: -50px;
     left: 66px;
 }
 
@@ -511,20 +532,37 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 996px;
-    height: 459px;
+    max-width: 850px;
+    height: 395px;
     align-content: space-between;
+}
+
+.recommend .banner .img_wrap li:first-child {
+    width: 518px;
 }
 
 .recommend .banner .img_wrap li:nth-child(2) {
     position: relative;
+    width: 320px;
+}
+
+.recommend .banner .img_wrap li:nth-child(3){
+    width: 320px;
+}
+
+.recommend .banner .img_wrap li:last-child {
+    width: 518px
+}
+
+.recommend .banner .img_wrap li img {
+    width: 100%;
 }
 
 /* recommend-배너 info */
 .recommend .banner .img_wrap .info {
     position: absolute;
-    top: 41px;
-    left: 30px;
+    top: 18%;
+    left: 7%;
     color: #ffffff;
 }
 
@@ -534,6 +572,7 @@
     color: #dad8d2;
     letter-spacing: -0.5px;
     text-indent: -10px;
+    font-size: 0.72rem;
 }
 .recommend .banner .img_wrap .info li:before {
     content: "-";
@@ -541,8 +580,8 @@
 }
 
 .recommend .banner .img_wrap .info li:first-child {
-    padding-bottom: 19px;
-    font-size: 24px;
+    padding-bottom: 15px;
+    font-size: 1.3rem;
     font-weight: 600;
 }
 .recommend .banner .img_wrap .info li:first-child:before{
@@ -789,6 +828,10 @@
     font-family: 'Lato', sans-serif;
 }
 
+#footer .footer_detail .customer_center {
+    width: 32%;
+}
+
 #footer .footer_detail .customer_center a {
     display: inline-block;
     margin: 23px 0 24px;
@@ -806,7 +849,7 @@
 }
 
 #footer .footer_detail .customer_center p {
-    font-size: 11px;
+    font-size: 0.65rem;
     font-weight: 300;
     line-height: 14px;
     letter-spacing: 0.5px;
@@ -814,16 +857,19 @@
     color: #999999;
 }
 
+#footer .company_info {
+    width: 58%;
+}
+
 #footer .company_info dl dt, dd {
     display: inline-block;
+    font-size: 0.65rem;
 }
 
 #footer .company_info dl {
     margin-top: 23px;
-    font-size: 11px;
     font-family: inherit;
     line-height: 16px;
-    letter-spacing: 0.5px;
 }
 
 #footer .company_info dl dt {
@@ -838,9 +884,9 @@
 
 #footer .copyright {
     text-align: right;
-    font-size: 11px;
+    width: 30%;
+    font-size: 0.6rem;
     font-family: 'Lato', sans-serif;
-    letter-spacing: 0.2px;
 }
 
 #footer .copyright a {
@@ -892,7 +938,7 @@
 
 @media screen and (min-width: 2077px) {
     #aside {
-        left: 50%;
-        margin-left: 960px;
+        /*left: 50%;*/
+        /*margin-left: 960px;*/
     }
 }
