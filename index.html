@@ -34,9 +34,12 @@
 					<li>
 						<a href="#">세움소개</a>
 						<ul class="gnb_2depth">
-							<li><a href="#">소개1</a></li>
-							<li><a href="#">소개2</a></li>
-							<li><a href="#">소개3</a></li>
+							<li><a href="#">세움인사말</a></li>
+							<li><a href="#">세움연혁</a></li>
+							<li><a href="#">세움사람들</a></li>
+							<li><a href="#">세움이하는일</a></li>
+							<li><a href="#">스틸하우스란?</a></li>
+							<li><a href="#">세움파트너</a></li>
 						</ul>
 					</li>
 					<li>
@@ -89,6 +92,90 @@
 					</li>
 				</ul>
 			</nav>
+
+			<nav id="mo_gnb">
+				<!-- 닫기 버튼 -->
+				<button type="button" class="btn_close" onclick="this.parentElement.style.display='none'">&times</button>
+				<div class="mo_gnb_wrap">
+					<!-- quick menu -->
+					<ul class="logo_call">
+						<li><a href="#"><img src="img/aside/logo.png" alt="세움건설 홈페이지"></a></li>
+						<li><a href="tel:1566-1269"><img src="img/aside/call.png" alt="상담원연결"></a></li>
+					</ul>
+					<ul class="quick_btn">
+						<li><a href="#"><img src="img/aside/map.png" alt="오시는 길"></a></li>
+						<li><a href="#"><img src="img/aside/faq.png" alt="자주묻는 질문"></a></li>
+						<li><a href="#"><img src="img/aside/as.png" alt="as문의"></a></li>
+						<li><a href="#"><img src="img/aside/consult.png" alt="컨설팅"></a></li>
+					</ul>
+
+					<!-- gnb nav -->
+					<ul class="gnb_1depth">
+						<li>
+							<a href="#">세움소개</a>
+							<ul class="gnb_2depth">
+								<li><a href="#">소개1</a></li>
+								<li><a href="#">소개2</a></li>
+								<li><a href="#">소개3</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">세움표준주택</a>
+							<ul class="gnb_2depth">
+								<li><a href="#">표준주택1</a></li>
+								<li><a href="#">표준주택2</a></li>
+								<li><a href="#">표준주택3</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">세움표준주택</a>
+							<ul class="gnb_2depth">
+								<li><a href="#">표준주택1</a></li>
+								<li><a href="#">표준주택2</a></li>
+								<li><a href="#">표준주택3</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">건축주스토리</a>
+							<ul class="gnb_2depth">
+								<li><a href="#">스토리1</a></li>
+								<li><a href="#">스토리2</a></li>
+								<li><a href="#">스토리3</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">세움갤러리</a>
+							<ul class="gnb_2depth">
+								<li><a href="#">갤러리1</a></li>
+								<li><a href="#">갤러리2</a></li>
+								<li><a href="#">갤러리3</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">세움 디테일</a>
+							<ul class="gnb_2depth">
+								<li><a href="#">디테일1</a></li>
+								<li><a href="#">디테일2</a></li>
+								<li><a href="#">디테일3</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">세움건축센터</a>
+							<ul class="gnb_2depth">
+								<li><a href="#">건축상담</a></li>
+								<li><a href="#">카다로그신청</a></li>
+								<li><a href="#">세움자료실</a></li>
+							</ul>
+						</li>
+					</ul>
+					<!-- sns -->
+					<ul class="sns">
+						<li><a href="#"><img src="img/aside/twitter.png" alt="트위터"></a></li>
+						<li><a href="#"><img src="img/aside/mail.png" alt="메일"></a></li>
+						<li><a href="#"><img src="img/aside/cloud.png" alt="클라우드"></a></li>
+					</ul>
+				</div>
+			</nav>
 		</header><!--// header -->
 	</div><!--// header wrap -->
 
@@ -109,7 +196,7 @@
 		<!-- Swiper JS -->
 		var swiper = new Swiper('.swiper-container', {
 			slidesPerView: 1,
-			spaceBetween: 30,
+			spaceBetween: 0,
 			loop: true,
 			pagination: {
 				el: '.swiper-pagination',

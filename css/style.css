@@ -16,7 +16,7 @@
 }
 
 .hide {
-    display: none;
+    display: none!important;
 }
 
 /* 전체 레이아웃 */
@@ -940,5 +940,69 @@
     #aside {
         /*left: 50%;*/
         /*margin-left: 960px;*/
+    }
+}
+
+/* mobile layout */
+@media only screen and (max-width: 1000px) {
+    #header {
+        background-color: rgba(56,79,97,0.6);
+    }
+    #header .logo {
+        position: absolute;
+        left: 5%
+    }
+    #header .logo a {
+        width: 110px;
+    }
+    #header #gnb {
+        display: none;
+    }
+    #header #mo_gnb {
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        background-color: rgb(56,79,97);
+    }
+    #mo_gnb .mo_gnb_wrap > ul {
+        padding: 20px 0px;
+        border-bottom: 1px solid #e6e6e6;
+    }
+    #mo_gnb .btn_close {
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        font-size: 50px;
+        color: #ffffff;
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    .mo_gnb_wrap .logo_call {
+        display: flex;
+        justify-content: left;
+        align-items: flex-end;
+    }
+
+    .mo_gnb_wrap .logo_call li:first-child {
+        margin: 0 20px;
+        width: 50px;
+    }
+
+    .mo_gnb_wrap .logo_call li img {
+        width: 100%;
+    }
+
+    .mo_gnb_wrap .quick_btn {
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    #aside {
+        display: none;
     }
 }
