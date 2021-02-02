@@ -936,6 +936,101 @@
     padding-top: 16px;
 }
 
+/* 모바일 햄버거 버튼 nav */
+#mo_gnb {
+    position: fixed;
+    top: 1px;
+    right: 0;
+    bottom: 0;
+    width: 320px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: rgb(56,79,97);
+}
+/*#mo_gnb:before{*/
+/*    content: "00000000";*/
+/*    position: absolute;*/
+/*    width: 100%;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    background-color: aqua;*/
+/*}*/
+
+#mo_gnb .mo_gnb_wrap > ul {
+    padding: 20px 0px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+#mo_gnb .mo_gnb_wrap > ul:last-child, .mo_gnb_wrap .gnb_1depth>li:last-child>a{
+    border: none;
+}
+
+#mo_gnb .btn_close {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    font-size: 50px;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.mo_gnb_wrap .logo_call {
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+}
+
+.mo_gnb_wrap .logo_call li:first-child {
+    margin: 0 20px;
+    width: 50px;
+}
+
+.mo_gnb_wrap .logo_call li img {
+    width: 100%;
+}
+
+.mo_gnb_wrap .quick_btn {
+    display: flex;
+    justify-content: space-around;
+}
+
+.mo_gnb_wrap .gnb_1depth {
+    padding: 0!important;
+}
+
+.mo_gnb_wrap .gnb_1depth>li>a {
+    display: block;
+    padding: 18px 0px 18px 35px;
+    font-size: 16px;
+    color: #dddddd;
+    cursor: pointer;
+    border-bottom: 1px dashed #e6e6e6;
+}
+
+.mo_gnb_wrap .gnb_2depth {
+    display: none;
+}
+
+
+.mo_gnb_wrap .sns {
+    display: flex;
+    justify-content: space-around;
+}
+
+.mo_gnb_wrap .sns a {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background-color: #656566;
+    border-radius: 50%;
+    padding-top: 12px;
+    padding-left: 12px;
+}
+.mo_gnb_wrap .sns a:last-child{
+    padding-top: 14px;
+}
+
 @media screen and (min-width: 2077px) {
     #aside {
         /*left: 50%;*/
@@ -958,48 +1053,7 @@
     #header #gnb {
         display: none;
     }
-    #header #mo_gnb {
-        position: fixed;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        width: 100%;
-        overflow-x: hidden;
-        overflow-y: scroll;
-        background-color: rgb(56,79,97);
-    }
-    #mo_gnb .mo_gnb_wrap > ul {
-        padding: 20px 0px;
-        border-bottom: 1px solid #e6e6e6;
-    }
-    #mo_gnb .btn_close {
-        position: absolute;
-        top: 20px;
-        right: 10px;
-        font-size: 50px;
-        color: #ffffff;
-        background-color: rgba(255, 255, 255, 0);
-    }
 
-    .mo_gnb_wrap .logo_call {
-        display: flex;
-        justify-content: left;
-        align-items: flex-end;
-    }
-
-    .mo_gnb_wrap .logo_call li:first-child {
-        margin: 0 20px;
-        width: 50px;
-    }
-
-    .mo_gnb_wrap .logo_call li img {
-        width: 100%;
-    }
-
-    .mo_gnb_wrap .quick_btn {
-        display: flex;
-        justify-content: space-around;
-    }
 
 
     #aside {
