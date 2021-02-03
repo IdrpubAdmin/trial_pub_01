@@ -50,6 +50,15 @@
     width: 100%;
 }
 
+#header .btn_toogle {
+    display: none;
+    position: absolute;
+    top: 32px;
+    right: 5%;
+    color: #ffffff;
+    font-size: 25px;
+}
+
 #gnb {
     display: flex;
     flex: 1;
@@ -938,12 +947,14 @@
 
 /* 모바일 햄버거 버튼 nav */
 #mo_gnb {
+    display: none;
     position: fixed;
-    top: 1px;
+    top: 91px;
     right: 0;
     bottom: 0;
-    width: 320px;
-    height: 100vh;
+    /*width: 320px;*/
+    width: 100%;
+    height: auto;
     overflow-x: hidden;
     overflow-y: scroll;
     background-color: rgb(56,79,97);
@@ -962,7 +973,7 @@
     border-bottom: 1px solid #e6e6e6;
 }
 
-#mo_gnb .mo_gnb_wrap > ul:last-child, .mo_gnb_wrap .gnb_1depth>li:last-child>a{
+#mo_gnb .mo_gnb_wrap > ul:last-child {
     border: none;
 }
 
@@ -975,20 +986,21 @@
     background-color: rgba(255, 255, 255, 0);
 }
 
-.mo_gnb_wrap .logo_call {
-    display: flex;
-    justify-content: left;
-    align-items: flex-end;
-}
+/* mo_gnb / quick menu */
+/*.mo_gnb_wrap .logo_call {*/
+/*    display: flex;*/
+/*    justify-content: left;*/
+/*    align-items: flex-end;*/
+/*}*/
 
-.mo_gnb_wrap .logo_call li:first-child {
-    margin: 0 20px;
-    width: 50px;
-}
+/*.mo_gnb_wrap .logo_call li:first-child {*/
+/*    margin: 0 20px;*/
+/*    width: 50px;*/
+/*}*/
 
-.mo_gnb_wrap .logo_call li img {
-    width: 100%;
-}
+/*.mo_gnb_wrap .logo_call li img {*/
+/*    width: 100%;*/
+/*}*/
 
 .mo_gnb_wrap .quick_btn {
     display: flex;
@@ -999,19 +1011,62 @@
     padding: 0!important;
 }
 
-.mo_gnb_wrap .gnb_1depth>li>a {
-    display: block;
-    padding: 18px 0px 18px 35px;
-    font-size: 16px;
-    color: #dddddd;
-    cursor: pointer;
+.mo_gnb_wrap .gnb_1depth>li {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
     border-bottom: 1px dashed #e6e6e6;
 }
 
-.mo_gnb_wrap .gnb_2depth {
-    display: none;
+.mo_gnb_wrap .gnb_1depth>li:last-child {
+    border-bottom: none;
 }
 
+.mo_gnb_wrap .gnb_1depth>li>a {
+    display: block;
+    /*padding-left: 30px;*/
+    font-size: 16px;
+    color: #f08211;
+    cursor: pointer;
+    /*border-top: 1px dashed #e6e6e6;*/
+    /*border-bottom: 1px dashed #e6e6e6;*/
+}
+
+
+
+
+.mo_gnb_wrap .gnb_1depth>li:first-child>a {
+    /*border-top: none;*/
+}
+
+.mo_gnb_wrap .gnb_2depth {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+.mo_gnb_wrap .gnb_2depth li {
+    width: 50%;
+}
+.mo_gnb_wrap .gnb_2depth li:first-child{
+    padding-bottom: 15px;
+}
+
+.mo_gnb_wrap .gnb_2depth>li>a {
+    display: block;
+    /*padding: 10px 0px 10px 45px;*/
+    font-size: 14px;
+    color: #dddddd;
+    cursor: pointer;
+}
+
+.mo_gnb_wrap .gnb_2depth>li:last-child>a {
+    /*border-bottom: 1px dashed #e6e6e6;*/
+}
+
+.mo_gnb_wrap .gnb_1depth li:last-child .gnb_2depth>li:last-child>a {
+    /*border-bottom: none;*/
+}
 
 .mo_gnb_wrap .sns {
     display: flex;
@@ -1038,10 +1093,20 @@
     }
 }
 
+@media screen and (min-width: 1001px) {
+    #header #mo_gnb {
+        display: none!important;
+    }
+}
+
 /* mobile layout */
 @media only screen and (max-width: 1000px) {
     #header {
-        background-color: rgba(56,79,97,0.6);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(56,79,97,0.9);
     }
     #header .logo {
         position: absolute;
@@ -1050,11 +1115,12 @@
     #header .logo a {
         width: 110px;
     }
+    #header .btn_toogle {
+        display: block;
+    }
     #header #gnb {
         display: none;
     }
-
-
 
     #aside {
         display: none;

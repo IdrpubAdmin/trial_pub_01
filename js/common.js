@@ -1,3 +1,12 @@
+// btn_toggle 클릭 event
+const toggleBtn = document.querySelector('.btn_toogle');
+const menu = document.querySelector('#mo_gnb');
+
+toggleBtn.addEventListener('click', ()=> {
+    menu.classList.toggle('active');
+});
+
+
 // gnb mouse over N out event
 document.addEventListener('DOMContentLoaded',  () => {
     const toggleBtns = document.querySelectorAll('.gnb_1depth>li');
