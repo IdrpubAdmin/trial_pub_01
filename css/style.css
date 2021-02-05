@@ -19,6 +19,10 @@
     display: none!important;
 }
 
+.mo_br {
+    display: none;
+}
+
 /* 전체 레이아웃 */
 #wrap {
     overflow: hidden;
@@ -328,7 +332,7 @@
 }
 
 .story_wrap > ul {
-    margin-bottom: 19px;
+    margin: 20px 10px;
 }
 
 .story_wrap > ul:last-child {
@@ -542,29 +546,26 @@
     justify-content: space-between;
     flex-wrap: wrap;
     max-width: 850px;
-    height: 395px;
+    /*height: 395px;*/
     align-content: space-between;
 }
 
-.recommend .banner .img_wrap li:first-child {
+.recommend .banner .img_wrap>li {
     width: 518px;
 }
 
-.recommend .banner .img_wrap li:nth-child(2) {
+.recommend .banner .img_wrap>li:nth-child(2) {
     position: relative;
     width: 320px;
+    text-align: left;
 }
 
-.recommend .banner .img_wrap li:nth-child(3){
+.recommend .banner .img_wrap>li:nth-child(3){
     width: 320px;
 }
-
-.recommend .banner .img_wrap li:last-child {
-    width: 518px
-}
-
 .recommend .banner .img_wrap li img {
     width: 100%;
+    border: 1px solid #dddddd;
 }
 
 /* recommend-배너 info */
@@ -616,12 +617,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
     max-width: 1210px;
     height: 467px;
     margin: 0 auto;
+    padding-left: 50px;
     background: url(../img/recommend_bg_02.png) no-repeat;
     background-position: right bottom;
-    text-align: left;
 }
 
 .recommend .bottom .title,
@@ -659,7 +661,6 @@
 /* why_steel */
 .values {
     display: flex;
-    height: 624px;
     border-bottom: 3px solid #5c5c5c;
 }
 
@@ -669,6 +670,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 624px;
     text-align: left;
 }
 
@@ -772,7 +774,9 @@
 }
 
 .values .hover_wrap .txt {
-    line-height: 14px;
+    padding: 0 20px;
+    line-height: 18px;
+    text-align: left;
     letter-spacing: -0.5px;
     color: #666666;
 }
@@ -1065,6 +1069,9 @@
 
 /* mobile layout */
 @media only screen and (max-width: 1000px) {
+    .mo_br {
+        display: block;
+    }
     #header {
         position: fixed;
         top: 0;
@@ -1127,7 +1134,7 @@
     .recommend .top .notice_wrap h2 {
         position: unset;
         width: 200px;
-        padding-top: 0;
+        padding: 20px 0px;
     }
     .recommend .top .notice_wrap .notice {
         position: unset;
@@ -1138,7 +1145,21 @@
         position: relative;
         bottom: unset;
         left: unset;
-        margin-top: 20px;
+        margin-top: 50px;
+    }
+    .recommend .banner div {
+        text-align: center;
+    }
+    .recommend .banner .img_wrap {
+        justify-content: center;
+    }
+    .recommend .banner .img_wrap>li {
+        width: 80%;
+        margin-top: 10px;
+    }
+    .recommend .banner .img_wrap>li:nth-child(2),
+    .recommend .banner .img_wrap>li:nth-child(3) {
+        width: 40%;
     }
 
     .recommend .banner .indi {
@@ -1155,6 +1176,52 @@
     }
     .recommend .banner .indi .icon li {
         margin-bottom: unset;
+    }
+
+    .recommend .bottom {
+        background-size: 300px;
+        align-items: center;
+        padding-left: unset;
+    }
+    /* why_steel */
+    .values {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .values .card {
+        width: 49%;
+        margin-top: 5px;
+        margin-right: 5px;
+    }
+    .values .card:nth-of-type(even) {
+        margin-right: 0;
+    }
+
+    .values .hover_wrap .txt{
+    }
+
+    /* footer */
+    #footer {
+    }
+    #footer .footer_top {
+        padding: 5px 5% 0px;
+    }
+    #footer .footer_bottom {
+        padding-bottom: unset;
+    }
+    #footer .footer_detail {
+        justify-content: space-around;
+        flex-wrap: wrap;
+        height: unset;
+        padding: 20px 10px;
+    }
+    #footer .customer_center, .company_info {
+        width: unset!important;
+    }
+
+    #footer .copyright {
+        width: 100%;
+        margin-top: 25px;
     }
 
 }
