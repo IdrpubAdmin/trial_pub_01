@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /* 공통 */
 #wrap .container_box  {
-   max-width: 1000px;
-   margin: 0 auto;
-   /*background-color: #EA5021;*/
+    max-width: 1000px;
+    margin: 0 auto;
+    /*background-color: #EA5021;*/
 }
 
 #container .round {
@@ -19,7 +19,7 @@
     display: none!important;
 }
 
-.mo_br {
+.mo_show {
     display: none;
 }
 
@@ -95,7 +95,7 @@
 }
 
 #gnb .gnb_1depth > li:last-child > a {
-     padding: 53px 20px 0px;
+    padding: 53px 20px 0px;
 }
 
 #gnb .gnb_1depth > li > a:hover {
@@ -138,6 +138,12 @@
 #visual {
     position: relative;
     margin-top: -90px;
+}
+#visual .img_wrap ul li img:first-child{
+    display: block;
+}
+#visual .img_wrap ul li img:last-child{
+    display: none;
 }
 
 #visual button {
@@ -358,7 +364,7 @@
 }
 
 .story_wrap .story_card .info div {
-   font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .story_wrap .story_card .info .circle_item {
@@ -963,14 +969,6 @@
     overflow-y: scroll;
     background-color: rgb(56,79,97);
 }
-/*#mo_gnb:before{*/
-/*    content: "00000000";*/
-/*    position: absolute;*/
-/*    width: 100%;*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    background-color: aqua;*/
-/*}*/
 
 #mo_gnb .mo_gnb_wrap > ul {
     padding: 20px 0px;
@@ -1069,7 +1067,7 @@
 
 /* mobile layout */
 @media only screen and (max-width: 1000px) {
-    .mo_br {
+    .mo_show {
         display: block;
     }
     #header {
@@ -1095,6 +1093,22 @@
 
     #aside {
         display: none;
+    }
+    /* visual */
+    #visual .img_wrap img {
+        width: 100%;
+    }
+    #visual .img_wrap ul li img:first-child{
+        display: none;
+    }
+    #visual .img_wrap ul li img:last-child{
+        display: block;
+    }
+    #visual .btn_prev {
+        left: 5%;
+    }
+    #visual .btn_next {
+        right: 5%;
     }
 
     /* cs_center */

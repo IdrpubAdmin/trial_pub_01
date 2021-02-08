@@ -94,13 +94,13 @@
 
 			<nav id="mo_gnb">
 				<!-- 닫기 버튼 -->
-<!--				<button type="button" class="btn_close" onclick="this.parentElement.style.display='none'">&times</button>-->
+				<!--				<button type="button" class="btn_close" onclick="this.parentElement.style.display='none'">&times</button>-->
 				<div class="mo_gnb_wrap">
 					<!-- quick menu -->
-<!--					<ul class="logo_call">-->
-<!--						<li><a href="#"><img src="img/aside/logo.png" alt="세움건설 홈페이지"></a></li>-->
-<!--						<li><a href="tel:1566-1269"><img src="img/aside/call.png" alt="상담원연결"></a></li>-->
-<!--					</ul>-->
+					<!--					<ul class="logo_call">-->
+					<!--						<li><a href="#"><img src="img/aside/logo.png" alt="세움건설 홈페이지"></a></li>-->
+					<!--						<li><a href="tel:1566-1269"><img src="img/aside/call.png" alt="상담원연결"></a></li>-->
+					<!--					</ul>-->
 					<ul class="quick_btn">
 						<li><a href="#"><img src="img/aside/map.png" alt="오시는 길"></a></li>
 						<li><a href="#"><img src="img/aside/faq.png" alt="자주묻는 질문"></a></li>
@@ -179,13 +179,32 @@
 	<!-- visual -->
 	<div id="visual">
 		<div class="img_wrap swiper-container">
+			<!-- pc_img -->
 			<ul class="swiper-wrapper">
-				<li class="swiper-slide"><img src="img/slideimg01.jpg" alt=""/></li>
-				<li class="swiper-slide"><img src="img/slideimg02.jpg" alt=""/></li>
-				<li class="swiper-slide"><img src="img/slideimg03.jpg" alt=""/></li>
+				<li class="swiper-slide">
+					<img src="img/slideimg01.jpg" alt=""/>
+					<img src="img/mo_slideimg01.jpg" alt=""/>
+				</li>
+				<li class="swiper-slide">
+					<img src="img/slideimg02.jpg" alt=""/>
+					<img src="img/mo_slideimg02.jpg" alt=""/>
+				</li>
+				<li class="swiper-slide">
+					<img src="img/slideimg03.jpg" alt=""/>
+					<img src="img/mo_slideimg03.jpg" alt=""/>
+				</li>
 			</ul>
+
+			<!-- mo_img -->
+			<!--			<ul class="swiper-wrapper mo_img">-->
+			<!--				<li class="swiper-slide"><img src="img/mo_slideimg01.jpg" alt=""/></li>-->
+			<!--				<li class="swiper-slide"><img src="img/mo_slideimg02.jpg" alt=""/></li>-->
+			<!--				<li class="swiper-slide"><img src="img/mo_slideimg03.jpg" alt=""/></li>-->
+			<!--			</ul>-->
 			<button type="button" class="btn_prev swiper-button-prev">이전 배너보기</button>
-			<button type="button" class="btn_next swiper-button-next">다음 배너보기</button>
+			<button type="button" class="btn_next swiper-button-next">다음 배너보기
+<!--				<i class="fad fa-angle-double-right mo_show"></i>-->
+			</button>
 		</div>
 	</div><!--// visual-->
 
@@ -363,19 +382,19 @@
 				<div class="notice_wrap">
 					<h2><img src="img/recommend_title.png" alt="세움 추천 스틸하우스"></h2>
 					<div class="notice">
-					<dl>
-						<dt><a href="#" class="more">공지사항<span>MORE +</span></a></dt>
-						<dd>
-							<ul>
-								<li><a href="#"><span>2015 경남 건축 인테리어 전시회가 종료되었습니다.</span><span>2016.5.15</span></a></li>
-								<li><a href="#"><span>다양한 지역과 여러 건축주님들을 만날 수 있었습니다.</span><span>2016.7.18</span></a></li>
-								<li><a href="#"><span>STILL HOUSE에서는 다양한 기획예산, 설계와 스타일링으로 고객여러분께 보답하겠습니다.</span><span>2016.9.18</span></a></li>
-								<li><a href="#"><span>끝까지 함께하는 주거시설부문 국내 유일의 디자인 플랫폼입니다.</span><span>2016.4.20</span></a></li>
-								<li><a href="#"><span>세상에 단하나 뿐인 프리미엄 디자인으로 고객여러분께 보답하겠습니다.</span><span>2016.6.12</span></a></li>
-							</ul>
-						</dd>
-					</dl>
-				</div>
+						<dl>
+							<dt><a href="#" class="more">공지사항<span>MORE +</span></a></dt>
+							<dd>
+								<ul>
+									<li><a href="#"><span>2015 경남 건축 인테리어 전시회가 종료되었습니다.</span><span>2016.5.15</span></a></li>
+									<li><a href="#"><span>다양한 지역과 여러 건축주님들을 만날 수 있었습니다.</span><span>2016.7.18</span></a></li>
+									<li><a href="#"><span>STILL HOUSE에서는 다양한 기획예산, 설계와 스타일링으로 고객여러분께 보답하겠습니다.</span><span>2016.9.18</span></a></li>
+									<li><a href="#"><span>끝까지 함께하는 주거시설부문 국내 유일의 디자인 플랫폼입니다.</span><span>2016.4.20</span></a></li>
+									<li><a href="#"><span>세상에 단하나 뿐인 프리미엄 디자인으로 고객여러분께 보답하겠습니다.</span><span>2016.6.12</span></a></li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
 				</div>
 				<div class="banner">
 					<div class="group_1">
@@ -563,7 +582,7 @@
 					<div class="title">COMPANY INFO</div>
 					<dl>
 						<dt>Company</dt><dd>세움주택건설</dd>
-						<dt>Owner</dt><dd>박주찬</dd><br class="mo_br">
+						<dt>Owner</dt><dd>박주찬</dd><br class="mo_show">
 						<dt>Address</dt><dd>천안시 서북구 두정동 1006번지 늘사랑빌딩 201호</dd><br>
 						<dt>Tel</dt><dd>010-7999-3084</dd>
 						<dt>Fax</dt><dd>0303-3444-3084</dd><br>
@@ -581,7 +600,7 @@
 	</footer><!--// footer -->
 
 	<!-- aside -->
-	<div id="aside" class="hide">
+	<div id="aside" class="">
 		<h3 class="hide">seum Quick Menu</h3>
 		<ul class="logo_call">
 			<li><a href="#" ><img src="img/aside/logo.png" alt="세움건설 홈페이지"/></a></li>
