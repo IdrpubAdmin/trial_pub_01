@@ -76,7 +76,7 @@ showMessage('Hi!');
 
 // 4. Rest parameters (added in ES6)
 console.log('-----------------4. Rest parameters (added in ES6)');
-function printAll(...args) { // 배열 형태
+function printAll(...args) { // 현재 3개의 값이 담겨져 있는 배열 형태
     for (let i = 0; i < args.length; i++) {
         console.log(args[i]);
     }
@@ -87,7 +87,7 @@ function printAll(...args) { // 배열 형태
 
     args.forEach((arg) => console.log(arg)); // 더 간단히 사용하려면 'forEach'사용 - 나중에 배열에서 더 자세히 알게됨!
 }
-printAll('dream', 'coding', 'ellie');
+printAll('dream', 'coding', 'ellie'); // 인자 총 3개를 전달
 
 // 5. Local scope
 console.log('-----------------5. Local scope : 밖에서는 안이 보이지 않고 안에서만 밖을 볼 수 있다.');
