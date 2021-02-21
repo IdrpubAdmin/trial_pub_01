@@ -139,6 +139,10 @@
     position: relative;
     margin-top: -90px;
 }
+
+#visual .img_wrap img {
+    width: 100%;
+}
 #visual .img_wrap ul li img:first-child{
     display: block;
 }
@@ -157,12 +161,12 @@
 
 #visual .btn_prev {
     left: 14%;
-    background: url("../img/slide_left.png") no-repeat;
+    background: url("../img/visual/slide_left.png") no-repeat;
 }
 
 #visual .btn_next {
     right: 14%;
-    background: url("../img/slide_right.png") no-repeat;
+    background: url("../img/visual/slide_right.png") no-repeat;
 }
 
 /* container - 공통*/
@@ -420,7 +424,7 @@
     height: 27px;
     top: 18px;
     left: -8px;
-    background: url("../img/story_date_label.png");
+    background: url("../img/story/date_label.png");
 }
 
 .story_wrap .story_card .img span {
@@ -434,7 +438,7 @@
 /* recommend */
 .recommend {
     margin-top: 70px;
-    background: url("../img/recommend_bg_01.jpg") no-repeat;
+    background: url("../img/recommend/bg.jpg") no-repeat;
 }
 
 .recommend .top {
@@ -621,7 +625,7 @@
     height: 467px;
     margin: 0 auto;
     padding-left: 50px;
-    background: url(../img/recommend_bg_02.png) no-repeat;
+    background: url(../img/recommend/sub_bg.png) no-repeat;
     background-position: right bottom;
 }
 
@@ -694,19 +698,19 @@
 }
 
 .values .card_01 {
-    background: url(../img/why_steel_h01.png) no-repeat;
+    background: url(../img/why_steel/img_01.png) no-repeat;
 }
 
 .values .card_02 {
-    background: url(../img/why_steel_h02.png) no-repeat;
+    background: url(../img/why_steel/img_02.png) no-repeat;
 }
 
 .values .card_03 {
-    background: url(../img/why_steel_h03.png) no-repeat;
+    background: url(../img/why_steel/img_03.png) no-repeat;
 }
 
 .values .card_04 {
-    background: url(../img/why_steel_h04.png) no-repeat;
+    background: url(../img/why_steel/img_04.png) no-repeat;
 }
 
 .values .card .txt_wrap {
@@ -1072,10 +1076,7 @@
     }
     /* visual */
     #visual {
-        margin-top: -10px;
-    }
-    #visual .img_wrap img {
-        width: 100%;
+        margin-top: 89px;
     }
     #visual .img_wrap ul li img:first-child{
         display: none;
@@ -1086,15 +1087,14 @@
     #visual button {
         width: 46px;
         height: 74px;
-        top: 62%;
     }
     #visual .btn_prev {
-        left: 5%;
-        background: url(../img/m_slide_left.svg) no-repeat;
+        left: 1%;
+        background: url(../img/visual/m_slide_left.svg) no-repeat;
     }
     #visual .btn_next {
-        right: 5%;
-        background: url(../img/m_slide_right.svg) no-repeat;
+        right: 1%;
+        background: url(../img/visual/m_slide_right.svg) no-repeat;
     }
     /* cs_center */
     #container .cs_center{
@@ -1238,12 +1238,6 @@
     }
 }
 @media only screen and (max-width: 720px) {
-    #visual .btn_prev {
-        left: 1%;
-    }
-    #visual .btn_next {
-        right: 1%;
-    }
     /* cs_center */
     #container .cs_center .time {
         display: block;
