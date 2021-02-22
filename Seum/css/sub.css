@@ -1,0 +1,75 @@
+@charset "UTF-8";
+/*
+	1. Author : Lim_HA(2021.02)
+	2. Comment : sub.css
+	3. Modify :
+*/
+
+/* 공통 */
+.sub_header {
+    background: rgba(0,0,0,0.1);
+}
+#sub_container {
+    margin-top: -90px;
+}
+.sub_container section {
+    padding-top: 180px;
+    min-height: 930px;
+    background-size: cover;
+}
+.sub_container section .title {
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 36px;
+}
+.sub_container section .sub_title {
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #cccccc;
+}
+
+/* greeting */
+.greeting_wrap {
+    text-align: center;
+    background: url("../img/sub/01_greeting/bg.png") no-repeat;
+}
+.greeting_wrap .grt_icon {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    max-width: 554px;
+}
+/* greeting-icon */
+.greeting_wrap .grt_icon li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 105px;
+    height: 120px;
+    margin-bottom: 65px;
+    background: url("../img/sub/01_greeting/icon_bg.png") no-repeat;
+}
+.greeting_wrap .grt_icon li span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: -25px;
+    color: #cccccc;
+    font-size: 14px;
+    text-align: center;
+}
+.greeting_wrap .info dt {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #ffffff;
+}
+.greeting_wrap .info dd {
+    margin-bottom: 30px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #cccccc;
+}
+.greeting_wrap .info dd:last-child {
+    color: #ffcf22;
+}
