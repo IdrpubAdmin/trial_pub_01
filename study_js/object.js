@@ -62,12 +62,13 @@ console.log('-----------------3. Property value shorthand');
 const person1 = { name: 'bob', age: 2 };
 const person2 = { name: 'steve', age: 3 };
 const person3 = { name: 'dave', age: 4 };
-const person4 = new Person('elile', 30);
+const person4 = new Person('elile', 30); // 함수를 이용하여 값만 전달
 console.log(person4);
 
 // 4. Constructor Function
 console.log('-----------------4. Constructor Function');
-function Person(name, age) {
+// 오브젝트를 만드는 유용한 함수, 지난시간에 만든 템플릿(클래스)같은 아이!
+function Person(name, age) { // 다른 계산을 하지않고 순수하게 오브젝트를 생성하는 함수는 앞을 대문자로 기재해준다.
     // this = {};
     this.name = name;
     this.age = age;
