@@ -4,14 +4,12 @@
 	2. Comment : style.css
 	3. Modify :
 */
-
 /* 공통 */
 #wrap .container_box  {
     max-width: 1000px;
     margin: 0 auto;
     /*background-color: #EA5021;*/
 }
-
 #container .round {
     padding: 1px;
     border: 1px solid #FDBA68;
@@ -20,15 +18,12 @@
     text-align: center;
     color: #ffffff;
 }
-
 .hide {
     display: none!important;
 }
-
 .mo_show {
     display: none;
 }
-
 /* 전체 레이아웃 */
 #wrap {
     overflow: hidden;
@@ -37,29 +32,24 @@
     max-width: 1920px;
     margin: 0 auto;
 }
-
 /* 헤더 */
 #header_wrap {
     position: relative;
     border-bottom: 1px solid #ffffff;
     z-index: 10;
 }
-
 #header {
     display: flex;
     height: 90px;
 }
-
 #header .logo a {
     display: block;
     width: 160px;
     padding-top: 14px;
 }
-
 #header .logo img {
     width: 100%;
 }
-
 #header .btn_toogle {
     display: none;
     position: absolute;
@@ -68,38 +58,33 @@
     color: #ffffff;
     font-size: 25px;
 }
-
 #gnb {
     display: flex;
     flex: 1;
 }
 
 #gnb ul li {
-    padding: 0px 2px;
+    /*padding: 0px 2px;*/
     flex: 0 0 auto;
 }
-
 #gnb ul li a {
     display: block;
     height: 100%;
     color: #ffffff;
 }
-
 #gnb .gnb_1depth {
     display: flex;
     flex: 1;
     justify-content: flex-end;
 }
-
 #gnb .gnb_1depth li {
+    width: 130px;
     font-size: 1rem;
 }
-
 #gnb .gnb_1depth > li > a {
     padding: 52px 15px 0px;
     text-align: center;
 }
-
 #gnb .gnb_1depth > li:last-child > a {
     padding: 53px 20px 0px;
 }
@@ -107,22 +92,18 @@
 #gnb .gnb_1depth > li > a:hover {
     background-color: #87949D;
 }
-
 #gnb .gnb_2depth {
     display: none;
     padding: 10px 5px 10px 0px;
     background-color: rgba(103, 115, 124, 0.5);
     border-top : 1px solid #E9D371;
 }
-
 .active {
     display: block!important;
 }
-
 .active_02 {
     background-color: #87949D;
 }
-
 #gnb .gnb_2depth li {
     font-size: 0.9rem;
 }

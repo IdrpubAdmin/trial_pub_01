@@ -6,7 +6,11 @@
 */
 /* 공통 */
 .sub_header {
-    background: rgba(0,0,0,0.1);
+    background: rgba(0,0,0,.7);
+    opacity: .95;
+}
+.greeting_header {
+   background: rgba(0,0,0,0.1);
 }
 #sub_container {
     margin-top: -90px;
@@ -19,6 +23,7 @@
 }
 .sub_container .pt85 {
     padding-top: 85px!important;
+    margin-top: 90px;
 }
 .sub_container section .title {
     margin-bottom: 20px;
