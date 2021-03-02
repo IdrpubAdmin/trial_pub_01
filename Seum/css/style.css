@@ -670,7 +670,6 @@
 /* why_steel */
 .values {
     display: flex;
-    border-bottom: 3px solid #5c5c5c;
 }
 
 .values .card {
@@ -791,6 +790,9 @@
 }
 
 /* footer */
+#footer {
+    border-top: 3px solid #5c5c5c;
+}
 #footer .footer_top {
     display: flex;
     justify-content: space-between;

@@ -211,7 +211,6 @@ console.log('-----------------2-4. IIFE ');
     console.log('IIFE');
 })();
 
-// Fun quiz time❤️
 console.log('Fun quiz time❤');
 // function calculate(command, a, b)
 // command: add, substract, divide, multiply, remainder
@@ -231,6 +230,7 @@ function calculate(command, a, b) {
         default:
             throw Error('오류입니다. 다시입력하세요.');
     }
+// Fun quiz time❤️
 }
 console.log(calculate('add', 2, 3));
 console.log(calculate('substract', 2, 3));
