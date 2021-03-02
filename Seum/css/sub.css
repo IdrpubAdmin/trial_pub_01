@@ -87,6 +87,7 @@
 }
 /* history */
 .history {
+    padding-bottom: 70px!important;
     min-height: 690px;
     background: url("../img/sub/02_history/bg.png") no-repeat 70% 0;
 }
