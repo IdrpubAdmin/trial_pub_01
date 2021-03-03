@@ -6,7 +6,8 @@
 */
 /* 공통 */
 .sub_header {
-    background: rgba(0,0,0,.7);
+    /* background: rgba(0,0,0,.7); */
+    background: #5F6B74;
     opacity: .95;
 }
 .greeting_header {
