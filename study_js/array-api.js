@@ -148,13 +148,4 @@ console.log('------------------------보너스. 제일 낮은 점수부터 스�
 }
 
 
-// self study_끄적 끄적 연습장 @.@
-// https://www.youtube.com/watch?v=8v5BXcRUUto 태양 고데기
-
-
-
-
-
-
-
 
