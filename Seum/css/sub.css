@@ -59,7 +59,7 @@
     flex-wrap: wrap;
     margin: 0 auto;
     justify-content: space-between;
-    max-width: 554px;
+    width: 560px;
 }
 /* greeting-icon */
 .greeting .grt_icon li {
