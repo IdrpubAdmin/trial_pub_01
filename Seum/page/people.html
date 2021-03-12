@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>세움 사람들</title>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/seum_ui.css">
+    <!-- 아이콘 -->
+    <script src="https://kit.fontawesome.com/91cd26fdec.js" crossorigin="anonymous"></script>
+    <!-- js -->
+    <script src="../js/swiper.js"></script><!-- defer 적용안됨-->
+    <script src="../js/common.js" defer></script>
+    <script src="../js/include.js"></script>
+</head>
+<body>
+<div id="wrap">
+    <!-- header wrap -->
+<div id="header_wrap" class="sub_header">
+    <header id="header" class="container_box">
+        <h1 class="logo">
+            <a href="../index.html">
+                <img src="../img/logo.png" alt="세움주택">
+            </a>
+        </h1>
+        <a href="#" class="btn_toogle">
+            <i class="fas fa-bars"></i>
+        </a>
+        <nav id="gnb" class="pc_show">
+            <ul class="gnb_1depth">
+                <li>
+                    <a href="#">세움소개</a>
+                    <ul class="gnb_2depth">
+                        <li><a href="./greeting.html">세움인사말</a></li>
+                        <li><a href="./history.html">세움연혁</a></li>
+                        <li><a href="./people.html">세움사람들</a></li>
+                        <li><a href="./work.html">세움이하는일</a></li>
+                        <li><a href="./steel.html">스틸하우스란?</a></li>
+                        <li><a href="./partner.html">세움파트너</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">세움표준주택</a>
+                    <ul class="gnb_2depth">
+                        <li><a href="#">표준주택1</a></li>
+                        <li><a href="#">표준주택2</a></li>
+                        <li><a href="#">표준주택3</a></li>
+                        <li><a href="#">표준주택4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">건축주스토리</a>
+                    <ul class="gnb_2depth">
+                        <li><a href="#">스토리1</a></li>
+                        <li><a href="#">스토리2</a></li>
+                        <li><a href="#">스토리3</a></li>
+                        <li><a href="#">스토리4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">세움갤러리</a>
+                    <ul class="gnb_2depth">
+                        <li><a href="#">갤러리1</a></li>
+                        <li><a href="#">갤러리2</a></li>
+                        <li><a href="#">갤러리3</a></li>
+                        <li><a href="#">갤러리4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">세움 디테일</a>
+                    <ul class="gnb_2depth">
+                        <li><a href="#">디테일1</a></li>
+                        <li><a href="#">디테일2</a></li>
+                        <li><a href="#">디테일3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">세움건축센터</a>
+                    <ul class="gnb_2depth">
+                        <li><a href="#">건축상담</a></li>
+                        <li><a href="#">카다로그신청</a></li>
+                        <li><a href="#">세움자료실</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <nav id="mo_gnb">
+            <div class="mo_gnb_wrap">
+                <ul class="quick_btn">
+                    <li><a href="#"><img src="../img/aside/map.png" alt="오시는 길"></a></li>
+                    <li><a href="#"><img src="../img/aside/faq.png" alt="자주묻는 질문"></a></li>
+                    <li><a href="#"><img src="../img/aside/as.png" alt="as문의"></a></li>
+                    <li><a href="#"><img src="../img/aside/consult.png" alt="컨설팅"></a></li>
+                </ul>
+                <!-- gnb nav -->
+                <ul class="mo_gnb_1depth">
+                    <li>
+                        <a href="#">세움소개</a>
+                        <ul class="mo_gnb_2depth">
+                            <li><a href="./greeting.html">세움인사말</a></li>
+                            <li><a href="./history.html">세움연혁</a></li>
+                            <li><a href="./people.html">세움사람들</a></li>
+                            <li><a href="./work.html">세움이하는일</a></li>
+                            <li><a href="./steel.html">스틸하우스란?</a></li>
+                            <li><a href="./partner.html">세움파트너</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">세움표준주택</a>
+                        <ul class="mo_gnb_2depth">
+                            <li><a href="#">표준주택1</a></li>
+                            <li><a href="#">표준주택2</a></li>
+                            <li><a href="#">표준주택3</a></li>
+                            <li><a href="#">표준주택4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">건축주스토리</a>
+                        <ul class="mo_gnb_2depth">
+                            <li><a href="#">스토리1</a></li>
+                            <li><a href="#">스토리2</a></li>
+                            <li><a href="#">스토리3</a></li>
+                            <li><a href="#">스토리4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">세움갤러리</a>
+                        <ul class="mo_gnb_2depth">
+                            <li><a href="#">갤러리1</a></li>
+                            <li><a href="#">갤러리2</a></li>
+                            <li><a href="#">갤러리3</a></li>
+                            <li><a href="#">갤러리4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">세움 디테일</a>
+                        <ul class="mo_gnb_2depth">
+                            <li><a href="#">디테일1</a></li>
+                            <li><a href="#">디테일2</a></li>
+                            <li><a href="#">디테일3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">세움건축센터</a>
+                        <ul class="mo_gnb_2depth">
+                            <li><a href="#">건축상담</a></li>
+                            <li><a href="#">카다로그신청</a></li>
+                            <li><a href="#">세움자료실</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- sns -->
+                <ul class="sns">
+                    <li><a href="#"><img src="../img/aside/twitter.png" alt="트위터"></a></li>
+                    <li><a href="#"><img src="../img/aside/mail.png" alt="메일"></a></li>
+                    <li><a href="#"><img src="../img/aside/cloud.png" alt="클라우드"></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+</div>
+    <!-- sub_container -->
+    <div id="sub_container" class="sub_container">
+        <!-- people -->
+        <section class="people title_black">
+            <div class="container_box">
+                <h3 class="title">세움과 함께하는 사람들</h3>
+                <p class="sub_title">세움은 삶의 질을 높이고 보다 아름다운 세상을 만드는데 기여하고자 걸어온 길입니다.</p>
+                <ul class="img_title">
+                    <li>
+                        <p>People <b>in</b> Seum</p>
+                        <p>집을 짓는다는것은 집을 지으실<br>
+                            건축주인과의 믿음을 기반으로 신뢰를<br>
+                            짓는다고 표현하고 싶습니다.<br>
+                            신뢰를 쌓아온 세움의 사람들입니다.
+                        </p>
+                    </li>
+                    <li>
+                        <img src="../img/sub/03_people/sub_intr_01.png" alt="세움사람들 이미지">
+                    </li>
+                    <li>
+                        <p>People <b>with</b> Seum</p>
+                        <p>세움과 함께 하는 풍부한 경험과 실력을<br>
+                            갖춘 전문가들을 소개합니다.
+                        </p>
+                    </li>
+                    <li>
+                        <img src="../img/sub/03_people/sub_intr_02.png" alt="세움과함께하는 사람들 이미지">
+                    </li>
+                </ul>
+                <div class="people_box">
+                    <div class="list list_01">
+                        <div class="item">
+                            <img src="../img/sub/03_people/img_01.png" alt="대표 박주찬">
+                            <ul>
+                                <li class="task">대표 겸 현장관리</li>
+                                <li class="name">박주찬</li>
+                                <li class="text">풍부한 현장경험을 바탕으로 건축주와 소통을 통한 집짓기를 실현하며 스틸하우스 정석 시공에 열의를 가지고 있습니다.</li>
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <img src="../img/sub/03_people/img_02.png" alt="현장소장 여경구">
+                            <ul>
+                                <li class="task">현장 소장</li>
+                                <li class="name">여경구</li>
+                                <li class="text">실내 디자인 및 건설업에대한 경험이 풍부하며 스틸하우스에 대한 열의와 전원주택시공에 대한 애착이 강하며 성실함과 유연함으로 집을 지을 인재입니다.</li>
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <img src="../img/sub/03_people/img_03.png" alt="설계디자인 최승규">
+                            <ul>
+                                <li class="task">설계 디자인</li>
+                                <li class="name">최승규</li>
+                                <li class="text">도면설계 디자인을 담당하고 있으며 실내건축학과를 수료 후 스케치업 강사 및 건축회사 인테리어회사에서 다양한 경험을 쌓았습니다.</li>
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <img src="../img/sub/03_people/img_04.png" alt="사진담당 및 인터뷰 홍정기">
+                            <ul>
+                                <li class="task">사진담당 및 인터뷰</li>
+                                <li class="name">홍정기</li>
+                                <li class="text">주택 전문 잡지에서 8년간 근무했으며 지금은 커피 관련 잡지에서 글을 쓰고 사진을 찍고 있습니다. 햇살 좋은 마당에서 커피 한 잔 마시는 여유를 그리워합니다.</li>
+                            </ul>
+                        </div>
+                    </div><!--// list_01 -->
+                    <div class="list list_02">
+                        <div class="item">
+                            <img src="../img/sub/03_people/img_05.png" alt="건축사 이원석">
+                            <ul>
+                                <li class="task">건축사(대한건축사협회 정회원)</li>
+                                <li class="name">이원석</li>
+                                <li class="text">설계분야 : 업무용건축물, 주거용건축물, 전원주택, 공장 등 세심하면서 건축주 요구를 설계에  빠짐없이 반영하여 건축주들에게 좋은 호응을 받고 있습니다.</li>
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <img src="../img/sub/03_people/img_06.png" alt="건축사 신이섭">
+                            <ul>
+                                <li class="task">건축사(대한건축사협회 정회원)</li>
+                                <li class="name">신이섭</li>
+                                <li class="text">설계분야 : 종교건축물, 전원주택, 교육연구시설 등 주택 설계에 있어 다양하고 풍부한 경험으로 사는 사람이 편리하고 원하는 요구사항을 설계에 잘 반영하는 스타일입니다.</li>
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <img src="../img/sub/03_people/img_07.png" alt="기초시공">
+                            <ul>
+                                <li class="task">기초시공</li>
+                                <li>
+                                    <span class="task">골조시공</span>
+                                    <span class="text">- 김연우 팀장(스틸하우스 골조 시공)</span>
+                                </li>
+                                <li>
+                                    <span class="task pc_show" style="color: #ffffff;">골조시공</span>
+                                    <span class="text">- 김준호 팀장(목조주택 골조 시공 및 내외장 시공)</span>
+                                </li>
+                                <li>
+                                    <span class="task">외장시공</span>
+                                    <span class="text">- 스타코 시공팀 박장수 팀장</span>
+                                </li>
+                                <li>
+                                    <span class="task">지붕시공</span>
+                                    <span class="text">- 기와 슁글 징크</span>
+                                </li>
+                                <li>
+                                    <span class="task">인테리어</span>
+                                    <span class="text">- 인테리어 시공팀 차규정 팀장</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <img src="../img/sub/03_people/img_08.png" alt="배관설비">
+                            <ul>
+                                <li>
+                                    <span class="task">배관설비</span>
+                                    <span class="text">- 대일 건축설비 이종경 사장님</span>
+                                </li>
+                                <li>
+                                    <span class="task">전기설비</span>
+                                    <span class="text">- 이노전기 충남 서북부지역</span>
+                                </li>
+                                <li>
+                                    <span class="task">전기설비</span>
+                                    <span class="text">- 상왕전기 충청 남부, 대전지역</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!--// list_02 -->
+                </div><!--// people_box -->
+            </div>
+        </section>
+    </div>
+    <!--// container -->
+    <div data-include-path="footer.html"></div>
+    <div data-include-path="aside.html"></div>
+</div>
+</body>
+</html>
