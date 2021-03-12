@@ -10,6 +10,9 @@
     background: #5F6B74;
     opacity: .95;
 }
+.sub_header #gnb .gnb_2depth > li > a.active {
+    color: red;
+}
 .greeting_header {
    background: rgba(0,0,0,0.1);
 }
@@ -28,6 +31,7 @@
 }
 .sub_container section .container_box {
     display: flex;
+    position: relative;
     flex-wrap: wrap;
     justify-content: center;
     padding: 0 20px;
@@ -48,8 +52,26 @@
 .sub_container .title_black .title, .sub_container .title_black .sub_title {
     color: #333333;
 }
+/* location */
+.sub_container .location {
+    position: absolute;
+    top: -50px;
+    left: 0;
+}
+.sub_container .location a{
+    font-size: 16px;
+    color: #ffffff;
+}
+.sub_container .location a:after {
+    content: ">";
+    display: inline-block;
+    width: 25px;
+}
+.sub_container .location a:last-child:after {
+    display: none;
+}
 
-/* greeting */
+    /* greeting */
 .greeting {
     min-height: 940px;
     background: url("../img/sub/01_greeting/bg.png") no-repeat;
