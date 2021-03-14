@@ -11,6 +11,12 @@
     <link rel="stylesheet" type="text/css" href="../css/seum_ui.css">
     <!-- 아이콘 -->
     <script src="https://kit.fontawesome.com/91cd26fdec.js" crossorigin="anonymous"></script>
+
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous"></script>
+
     <!-- js -->
     <script src="../js/swiper.js"></script><!-- defer 적용안됨-->
     <script src="../js/common.js" defer></script>
@@ -34,12 +40,12 @@
                 <li>
                     <a href="#">세움소개</a>
                     <ul class="gnb_2depth">
-                        <li><a href="./greeting.html">세움인사말</a></li>
-                        <li><a href="./history.html">세움연혁</a></li>
-                        <li><a href="./people.html">세움사람들</a></li>
-                        <li><a href="./work.html">세움이하는일</a></li>
-                        <li><a href="./steel.html">스틸하우스란?</a></li>
-                        <li><a href="./partner.html">세움파트너</a></li>
+                        <li><a href="greeting.html">세움인사말</a></li>
+                        <li><a href="history.html">세움연혁</a></li>
+                        <li><a href="people.html">세움사람들</a></li>
+                        <li><a href="work.html">세움이하는일</a></li>
+                        <li><a href="steel.html">스틸하우스란?</a></li>
+                        <li><a href="partner.html">세움파트너</a></li>
                     </ul>
                 </li>
                 <li>
@@ -87,7 +93,6 @@
                 </li>
             </ul>
         </nav>
-
         <nav id="mo_gnb">
             <div class="mo_gnb_wrap">
                 <ul class="quick_btn">
@@ -163,11 +168,18 @@
         </nav>
     </header>
 </div>
+
         <!-- sub_container -->
         <div id="sub_container" class="sub_container">
             <!-- partner -->
             <section class="partner pt85">
                 <div class="container_box">
+                    <!-- 브로드 캐스트 -->
+<div class="location">
+    <span>Home</span>
+    <span>세움소개</span>
+    <span id="cast"></span>
+</div>
                     <h3 class="title">세움파트너</h3>
                     <p class="sub_title">신뢰를 기반으로 한 행복한 집 짓기를 세움이 함께 합니다.</p>
                     <div class="partner_box">

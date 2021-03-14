@@ -10,15 +10,15 @@ toggleBtn.addEventListener('click', ()=> {
 // gnb mouse over N out event
 document.addEventListener('DOMContentLoaded',  () => {
     const toggleBtns = document.querySelectorAll('.gnb_1depth>li');
-    console.log(toggleBtns)
+    //console.log(toggleBtns)
 
     toggleBtns.forEach(function(navItem,idx,list){
-        console.log(navItem)
+        //console.log(navItem)
 
         let navItem1d = navItem.querySelector('.gnb_1depth>li>a');
         let navItem2d = navItem.querySelector('.gnb_2depth');
 
-        console.log(navItem2d)
+       // console.log(navItem2d)
 
         // 1depth에 마우스 오버시 2depth 노출
         navItem.addEventListener('mouseover', function () {
@@ -38,3 +38,26 @@ document.addEventListener('DOMContentLoaded',  () => {
     });
 
 })
+
+// 브로드 캐스트
+ //const title = document.getElementById("cast_title").textContent;
+ const title = document.querySelector('.container_box>.title').textContent;
+ document.getElementById("cast").innerHTML = title;
+
+// 활성화 페이지 서브타이틀 컬러 넣어주기
+const sub_title = document.querySelector('.gnb_2depth > li > a');
+$(document).ready(function () {
+    const loc = window.location.href;
+
+    $('.gnb_2depth > li > a').each(function() {
+        // console.log(loc);
+        // console.log($(this).attr("href"));
+        // console.log(loc.indexOf($(this).attr("href")));
+        if (loc.indexOf($(this).attr("href")) != -1) {
+
+            $(this).addClass('on');
+        }
+    });
+});
+
+
