@@ -45,10 +45,10 @@ document.addEventListener('DOMContentLoaded',  () => {
  document.getElementById("cast").innerHTML = title;
 
 // 활성화 페이지 서브타이틀 컬러 넣어주기
-const sub_title = document.querySelector('.gnb_2depth > li > a');
+// const sub_title = document.querySelector('.gnb_2depth > li > a');
+
 $(document).ready(function () {
     const loc = window.location.href;
-
     $('.gnb_2depth > li > a').each(function() {
         // console.log(loc);
         // console.log($(this).attr("href"));
