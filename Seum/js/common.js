@@ -46,18 +46,14 @@ document.addEventListener('DOMContentLoaded',  () => {
 
 // 활성화 페이지 서브타이틀 컬러 넣어주기
 // const sub_title = document.querySelector('.gnb_2depth > li > a');
-
-$(document).ready(function () {
+(function(){
     const loc = window.location.href;
-    $('.gnb_2depth > li > a').each(function() {
-        // console.log(loc);
-        // console.log($(this).attr("href"));
-        // console.log(loc.indexOf($(this).attr("href")));
-        if (loc.indexOf($(this).attr("href")) != -1) {
-
-            $(this).addClass('on');
+    const dep2Gnb = document.querySelectorAll('.gnb_2depth > li > a');
+    dep2Gnb.forEach(function(obj){
+        if (loc.indexOf(obj.getAttribute("href")) != -1) {
+            obj.classList.add('on');
         }
     });
-});
+})();
 
 
