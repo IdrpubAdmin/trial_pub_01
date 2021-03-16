@@ -42,10 +42,9 @@ document.addEventListener('DOMContentLoaded',  () => {
 // 브로드 캐스트
  //const title = document.getElementById("cast_title").textContent;
  const title = document.querySelector('.container_box>.title').textContent;
- document.getElementById("cast").innerHTML = title;
+ document.querySelector('#cast').innerHTML = title;
 
 // 활성화 페이지 서브타이틀 컬러 넣어주기
-// const sub_title = document.querySelector('.gnb_2depth > li > a');
 (function(){
     const loc = window.location.href;
     const dep2Gnb = document.querySelectorAll('.gnb_2depth > li > a');
@@ -55,5 +54,3 @@ document.addEventListener('DOMContentLoaded',  () => {
         }
     });
 })();
-
-

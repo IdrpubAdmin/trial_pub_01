@@ -49,3 +49,8 @@ userStorage
     .then(user => alert(`Hello ${user.name}, you have a ${user.role} role`)) // 출력
     .catch(console.log); // 수행중 문제가 생기면...
 
+// Homework
+userStorage
+    .getUserWithRole() //
+    .catch(console.log)
+    .then(console.log);
