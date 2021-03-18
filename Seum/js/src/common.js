@@ -38,7 +38,9 @@ document.addEventListener('DOMContentLoaded',  () => {
     });
 
 })
-
+if (window.NodeList && !NodeList.prototype.forEach) {
+    NodeList.prototype.forEach = Array.prototype.forEach;
+}
 // 브로드 캐스트
  //const title = document.getElementById("cast_title").textContent;
  const title = document.querySelector('.container_box>.title').textContent;
