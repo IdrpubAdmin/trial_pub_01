@@ -1,0 +1,169 @@
+// reset.scss
+@charset "UTF-8";
+
+/*
+	1. Author : Lim_HA(2021.02)
+	2. Comment : reset.css
+	3. Modify :
+*/
+
+/* woff 2.0 > woff > ttf/otf */
+/* font :: Nanum Square */
+@font-face {
+  font-family: 'Nanum Square';
+  font-weight: normal;
+  font-style: normal;
+  src: local("NanumSquarR");
+
+  /* 폰트식별 이름 */
+  src: url('../fonts/NanumSquare/NanumSquareR.eot') format("embedded-opentype"), url('../fonts/NanumSquare/NanumSquareR.eot?#iefix') format("embedded-opentype"), url('../fonts/NanumSquare/NanumSquareR.woff2') format("woff2"), url('../fonts/NanumSquare/NanumSquareR.woff') format("woff"), url('../fonts/NanumSquare/NanumSquareR.ttf') format("truetype"), url('../fonts/NanumSquare/NanumSquareR.svg#NanumSquareR') format("svg"), url('../fonts/NanumSquare/NanumSquareR.otf') format("opentype");
+
+  /* 주요 플랫폼에서 일반적 사용 */
+}
+
+/* font :: Noto-Sans-kr-regular */
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-weight: normal;
+  font-style: normal;
+  src: local("NotoSansKR-Regular");
+  src: url('../fonts/NotoSansKr/NotoSansKR-Regular.eot') format("embedded-opentype"), url('../fonts/NotoSansKr/NotoSansKR-Regular.eot?#iefix') format("embedded-opentype"), url('../fonts/NotoSansKr/NotoSansKR-Regular.woff2') format("woff2"), url('../fonts/NotoSansKr/NotoSansKR-Regular.woff') format("woff"), url('../fonts/NotoSansKr/NotoSansKR-Regular.ttf') format("truetype"), url('../fonts/NotoSansKr/NotoSansKR-Regular.svg#NotoSansKR') format("svg"), url('../fonts/NotoSansKr/NotoSansKR-Regular.otf') format("opentype");
+}
+
+/* font :: Lato-regular */
+@font-face {
+  font-family: 'Lato';
+  font-weight: normal;
+  font-style: normal;
+  src: local("Lato-Reqular");
+  src: url('../fonts/Lato/Lato-Regular.eot') format("embedded-opentype"), url('../fonts/Lato/Lato-Regular.eot?#iefix') format("embedded-opentype"), url('../fonts/Lato/Lato-Regular.woff2') format("woff2"), url('../fonts/Lato/Lato-Regular.woff') format("woff"), url('../fonts/Lato/Lato-Regular.ttf') format("truetype"), url('../fonts/Lato/Lato-Regular.svg#Lato-Regular') format("svg"), url('../fonts/Lato/Lato-Regular.otf') format("opentype");
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  /*font-size: 100%;*/
+  /*font: inherit;*/
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote {
+  &:before, &:after {
+    content: '';
+    content: none;
+  }
+}
+
+q {
+  &:before, &:after {
+    content: '';
+    content: none;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* LHA - reset css 추가
+   ========================================================================== */
+
+*, div, span, article, section, header, footer, aside, p, ul, li, fieldset, legend, label, a, nav, form, :after, :before {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  -webkit-text-size-adjust: none;
+  font-size: 100%;
+}
+
+body {
+  height: 100%;
+  -webkit-text-size-adjust: none;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nanum Square','Nanum Gothic','맑은 고딕','MalgunGothic','Dotum','돋움','AppleSDGothic',sans-serif;
+  font-size: 12px;
+}
+
+/* 폰트 기본설정 */
+
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, p, table, th, td, form, fieldset, legend, textarea, input, select, textarea, button, figure, figcaption {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nanum Square','Nanum Gothic','맑은 고딕','MalgunGothic','Dotum','돋움','AppleSDGothic',sans-serif;
+  font-size: 12px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+/* 폰트 스타일 초기화 */
+
+em, address {
+  font-style: normal;
+}
+
+/* a 링크 초기화 */
+
+a {
+  color: #222;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 테두리 초기화 */
+
+img, fieldset {
+  border: 0 none;
+}
+
+/* 버튼 초기화 */
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+/* clearfix */
+
+.clearfix {
+  *zoom: 1;
+
+  &:before {
+    display: block;
+    content: '';
+    line-height: 0;
+  }
+
+  &:after {
+    display: block;
+    content: '';
+    line-height: 0;
+    clear: both;
+  }
+}
