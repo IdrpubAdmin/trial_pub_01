@@ -9,8 +9,8 @@
   "license": "ISC",
   "devDependencies": {
     "gulp": "^4.0.2",
-    "gulp-file-include": "^2.3.0"
+    "gulp-file-include": "^2.3.0",
+    "gulp-sass": "^4.1.0"
   },
-  "dependencies": {},
   "description": ""
 }
