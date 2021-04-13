@@ -1,0 +1,229 @@
+@charset "UTF-8";
+
+/*
+	1. Author : Lim_HA(2021.04)
+	2. Comment : test.css
+	3. Modify :
+*/
+
+// 한줄 주석 - sass에서만 노출
+/*
+  여러줄 주석 - sass, css둘다 노출
+*/
+
+/*
+변수를 줄때는 영문, 영문+숫자, 영문+특수문자(- _)+숫자, 대소문자
+*/
+$gray:#c9c9c9;
+$white:#fff;
+$blue: blue;
+$red : red;
+$fs30: 30px;
+
+.btn1 { display: block; width: 200px; height: 50px; line-height: 50px; font-size: $fs30; color: $gray; background: $white; border: 1px solid $gray; text-align: center;
+    &:hover {background: $gray; color: $white;}
+}
+.btn2 {display: block; padding: 10px; font-size: $fs30; border: 1px solid $red; background: $blue; color: $gray;}
+
+/* 선택자 */
+//.a {color: red;
+//  ul {border: 1px solid red;
+//    > li {background: pink;
+//      a {text-decoration: none;
+//        &:hover {color:red;}
+//        &.bbb {font-size: 11px;}
+//      }
+//      .bbb {color: green;}
+//      &:last-child {border: 1px dotted yellow;}
+//    }
+//  }
+//}
+
+/*
+- mixin include
+@mixin = @keyframe ani{} - 반복되는 코드를 미리 작성해 놓고 필요할때마다 꺼내씀
+@include = animation-name:ani
+*/
+
+//@mixin test{
+//  width: 100px; height: 100px; border: 1px solid red;
+//}
+//@mixin clear {
+//  &:after {content: ""; display: block; clear: both;}
+//}
+//div {border: 3px solid blue; @include clear();}
+//p { float:left; @include test();}
+
+// 매개 변수 응용
+
+//@mixin border($color) {
+//  border: 1px solid $color;
+//}
+//div {@include border(blue);}
+//p {@include border(pink);}
+//span {@include border(#22222);}
+
+// 매개변수 복수로 넣기
+//@mixin box($w, $h){
+//  width:$w; height: $h;
+//}
+//div {@include box(50px, 100px); border: 1px solid blue;}
+
+// #{} 문자 보간(문자열) - 문자열 처리방법
+//$bx : box;
+//div.#{$bx} {border: 1px solid red;}
+//
+//@mixin bx($position, $wid, $color){
+//  border-#{$position}:$wid solid $color;
+//}
+//div {@include bx(right, 2px, red)}
+//p {@include bx(bottom, 5px, grey)}
+
+// @for 반복문 - 반복되는 작업을 한번에 처리
+
+//.list li.ico1 {background: url("../img/why_steel/img_01.png") no-repeat}
+//.list li.ico2 {background: url("../img/why_steel/img_02.png") no-repeat}
+//.list li.ico3 {background: url("../img/why_steel/img_03.png") no-repeat}
+//.list li.ico4 {background: url("../img/why_steel/img_04.png") no-repeat}
+
+//.list li {text-indent: 30px; background: no-repeat 0 0 / 20px auto;}
+                          // background: position / size
+//@for $i from 1 to 5 {
+//  // 변수 i : 숫자 1 ~4선언
+//  // to 5 : 원하는 숫자보다 한개 더 많이
+//  .list li.ico#{$i} {background-image: url(../img/why_steel/img_0#{$i}.png)}
+//  .list li:nth-child(#{$i}):before {content:"제목#{$i}"; color:red;}
+//}
+
+// @each 반복문 - 문자형태 반복문
+//@each $var in as, faq, map {
+//  .ico_#{$var} {
+//    background: url(../img/aside/#{$var}.png) no-repeat;
+//  }
+//}
+//$heading :(
+//  h1: 60px,
+//  h2: 40px,
+//  h3: 20px
+//);
+//
+//@each $ele, $fs in $heading {
+//      // 엘리먼트, font-size
+//  #{$ele} {
+//    font-size: $fs;
+//  }
+//}
+
+// @extend
+// css , 엔드 구분자 / 선택자로 지정한 것을 한번에 묶어서 처리한다.
+// 가능하면 mixin을 사용 해라!
+//%name {font-size: 30px; color: blue;}
+//.fs20 {font-size: 20px;}
+//@mixin name($bold, $color) {font-weight: $bold; background: $color;}
+//.a {@extend %name; @include name(bold, grey);}
+//.b {@extend .fs20;}
+//.c {@extend %name;}
+
+//%m0auto {width: 50%; margin: 0 auto;}
+//.visual {background: pink; height: 50px;
+//  div { @extend %m0auto; background: rgba(0,0,0,0.5); height: 50px;}
+//}
+//.main {background: purple; height: 100px;
+//  div { @extend %m0auto; background: rgba(0,0,0,0.5); height: 100px;}
+//}
+//.footer {background: violet; height: 50px;
+//  div { @extend %m0auto; background: rgba(0,0,0,0.5); height: 50px;}
+//}
+
+// 조건문
+//@mixin btn_radius($h, $radius:true) {
+//  padding: 0 20px; height: $h; line-height: $h; text-align: center; background: black; color: white;
+//  @if $radius{
+//    border-radius:$h / 2;
+//                // 높이의 반값
+//  }@else {
+//    border: 1px solid red;
+//  }
+//}
+//// .btn {@include btn_radius(30px, true);}
+//.btn {@include btn_radius(30px, false);}
+
+// 조건문 : 컨텐츠 가운데 정렬
+//@mixin position($x, $y, $z) {position : absolute; left: $x; top: $y; z-index: $z;
+//  @if $x == 50% and $y == 50% {
+//    transform: translate(-50%, -50%);
+//  }@else if $x == 50%{
+//    transform: translateX(-50%);
+//  }@else if $y == 50%{
+//    transform: translateY(-50%);
+//  }
+//}
+//div {width: 300px; height: 300px; background: black; @include position(null, 50%, 2);}
+
+// 믹스인 응용하기
+//@mixin clear {
+//  &:after {content: ""; display: block; clear: both;}
+//}
+
+//@mixin border_test{
+//  border: 1px solid blue;
+//}
+//
+//.a {background: red; @include border_test();
+//  @include clear();
+//  > div {float: left;}
+//}
+
+//@mixin ellipsis {overflow: hidden; display: block; text-overflow: ellipsis; white-space: nowrap;}
+@mixin ellipsis($w) {overflow: hidden; display: block; width:$w; text-overflow: ellipsis; white-space: nowrap;}
+
+@mixin ellipsis2($line, $w, $h) {overflow: hidden; display: -webkit-box; -webkit-line-clamp:$line;
+  width:$w; height:$h; -webkit-box-orient:vertical; text-overflow: ellipsis;}
+
+//.a {@include ellipsis;}
+.a {@include ellipsis(150px);}
+.b {@include ellipsis2(3, 150px, 66px);}
+
+//박스 가운데 정렬
+//div {position: absolute; width: 300px; height: 300px; border: 1px solid red; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+//@mixin box_center($w){position: absolute; left: 50%; top: 50%; width: $w; transform: translate(-50%, -50%);}
+//div {@include box_center(500px); height: 200px; border: 1px solid red;}
+
+@mixin position($x, $y, $z, $w) {
+  position: absolute;
+  left: $x;
+  top: $y;
+  z-index: $z;
+  width: $w;
+  @if $x == 50% and $y == 50% {
+    transform: translate(-50%, -50%);
+  } @else if $x == 50% {
+    transform: translateX(-50%);
+  } @else if $y == 50% {
+    transform: translateY(-50%);
+  }
+}
+div {@include position(50%, 50%, 2, 300px); height: 200px; border: 1px solid red;}
+
+//패스트 캠퍼스 중첩 상위 선택자
+.btn {
+  position: absolute;
+  &.active { // 일치 선택자
+    color: red;
+  }
+}
+
+.list {
+  li {
+    &:last-child{ // 가상 클래스 선택자
+      margin-right: 0;
+      margin-top: 20px;
+      margin-left: 0px;
+    }
+  }
+}
+@mixin test{color: red}
+
+.test {
+  @include test;
+}

@@ -1,5 +1,5 @@
 // btn_toggle 클릭 event
-const toggleBtn = document.querySelector('.btn_toogle');
+const toggleBtn = document.querySelector('.btn_toggle');
 const menu = document.querySelector('#mo_gnb');
 
 toggleBtn.addEventListener('click', ()=> {

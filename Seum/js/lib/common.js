@@ -1,5 +1,5 @@
 'use strict';// btn_toggle 클릭 event
-var toggleBtn=document.querySelector('.btn_toogle'),menu=document.querySelector('#mo_gnb');toggleBtn.addEventListener('click',function(){menu.classList.toggle('active')}),document.addEventListener('DOMContentLoaded',function(){var a=document.querySelectorAll('.gnb_1depth>li');//console.log(toggleBtns)
+var toggleBtn=document.querySelector('.btn_toggle'),menu=document.querySelector('#mo_gnb');toggleBtn.addEventListener('click',function(){menu.classList.toggle('active')}),document.addEventListener('DOMContentLoaded',function(){var a=document.querySelectorAll('.gnb_1depth>li');//console.log(toggleBtns)
 a.forEach(function(a){//console.log(navItem)
 var b=a.querySelector('.gnb_1depth>li>a'),c=a.querySelector('.gnb_2depth');// console.log(navItem2d)
 // 1depth에 마우스 오버시 2depth 노출

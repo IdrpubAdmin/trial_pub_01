@@ -1,0 +1,31 @@
+@charset "utf-8";
+/*
+	1. Author : Lim_HA(2021.04)
+	2. Comment : mixin
+	3. Modify :
+*/
+
+@mixin flex_center($a){
+  display: flex;
+  justify-content: center;
+  align-items: $a;
+}
+
+//@mixin clear {
+//  &:after {content: ""; display: block; clear: both;}
+//}
+
+//.a {background: red; @include border_test();
+//  @include clear();
+//  > div {float: left;}
+//}
+
+//@mixin ellipsis {overflow: hidden; display: block; text-overflow: ellipsis; white-space: nowrap;}
+//오버 영역 텍스트 ... 처리
+//@mixin ellipsis($w) {overflow: hidden; display: block; width:$w; text-overflow: ellipsis; white-space: nowrap;}
+
+//.a {@include ellipsis;}
+//.a {@include ellipsis(150px);}
+
+//@mixin ellipsis2($line, $w, $h) {overflow: hidden; display: -webkit-box; -webkit-line-clamp:$line;
+//  width:$w; height:$h; -webkit-box-orient:vertical; text-overflow: ellipsis;}
